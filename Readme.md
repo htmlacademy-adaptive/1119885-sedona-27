@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Александр Козюков](https://up.htmlacademy.ru/adaptive/27/user/1119885).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
