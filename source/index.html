@@ -9,10 +9,14 @@
 <body class="page__body">
   <header class="header">
     <a class="header__logo logo">
-      <img class="logo-image" src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+      <img class="logo__image" src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
     </a>
 
     <nav class="navigation">
+      <button class="navigation__button-toggle" type="button">
+        <span class="visually-hidden">Показать навигацию</span>
+      </button>
+
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current">Главная</a>
@@ -60,26 +64,27 @@
         </div>
 
         <!-- Блок с условиями проживания -->
-        <div class="accomodations">
-          <div class="accomodations__item accomodation">
-            <h3 class="accomodation__title">Жилье</h3>
+        <section class="accomodations">
+          <h3 class="visually-hidden">Условия проживания</h3>
+          <div class="accomodations__item accomodation accomodation--housing">
+            <h4 class="accomodation__title">Жилье</h4>
             <p class="accomodation__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
 
-          <div class="accomodations__item accomodation">
-            <h3 class="accomodation__title">Еда</h3>
+          <div class="accomodations__item accomodation accomodation--food">
+            <h4 class="accomodation__title">Еда</h4>
             <p class="accomodation__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
 
-          <div class="accomodations__item accomodation">
-            <h3 class="accomodation__title">Сувениры</h3>
+          <div class="accomodations__item accomodation accomodation--souvenir">
+            <h4 class="accomodation__title">Сувениры</h4>
             <p class="accomodation__description">Не только китайского, но и местного производства!</p>
           </div>
-        </div>
+        </section>
 
         <div class="advantages__item advantage advantage--special">
+          <img class="advantage__image" src="" alt="" width="" height="">
           <div class="advantage__text-wrapper">
-            <img class="advantage__image" src="" alt="" width="" height="">
             <h3 class="advantage__title">Там есть мост дьявола</h3>
             <span class="advantage__count">— №2 —</span>
             <p class="advantage__description">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
@@ -116,7 +121,7 @@
       <h2 class="search__title">Заинтересовались?</h2>
       <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <button class="search__button">Найти гостиницу</button>
+      <a class="search__button button" href="#">Найти гостиницу</a>
     </section>
 
     <!-- Карта Седоны -->
@@ -139,7 +144,7 @@
 
     <div class="footer__copyright copyright">
       Разработано
-      <img src="img/htmlacademy.svg" alt="" width="28" height="34">
+      <img src="img/htmlacademy.svg" alt="HTML Academy" width="28" height="34">
     </div>
   </footer>
 </body>
