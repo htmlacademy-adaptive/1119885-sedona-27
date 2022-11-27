@@ -9,10 +9,10 @@
 <body class="page__body">
   <header class="header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+      <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
     </a>
 
-    <nav class="navigation">
+    <nav class="header__navigation navigation">
       <button class="navigation__button-toggle" type="button">
         <span class="visually-hidden">Меню навигацию</span>
       </button>
@@ -23,7 +23,7 @@
         </li>
 
         <li class="navigation__item">
-          <span class="navigation__link navigation__link--current">Фото и видео</span>
+          <a class="navigation__link navigation__link--current">Фото и видео</a>
         </li>
 
         <li class="navigation__item">
@@ -41,49 +41,69 @@
     <h1 class="visually-hidden">Галерея Седоны</h1>
 
     <div class="hero">
-      <img class="hero__image" src="img/hero-sedona.svg" alt="Седона" width="230" height="40">
+      <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
     </div>
 
     <section class="gallery-photo">
-      <h2 class="gallery-photo__title">Фото и видео</h2>
-      <p class="gallery-photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-        политике и экономике.</p>
+      <div class="gallery-photo__text-wrapper">
+        <h2 class="gallery-photo__title">Фото и видео</h2>
+        <p class="gallery-photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+      </div>
 
       <article class="gallery-photo__card card">
-        <img class="card__image" src="img/gallery-images/photo-1.jpg" alt="Просторная пустынная равнина" width="280"
-          height="280">
-        <h3 class="card__title">Народные просторы</h3>
-        <p class="card__author">Автор фото: Борис</p>
-        <p class="card__likes"><b>1350</b></p>
+        <div class="card__image-wrapper">
+          <img src="img/mobile/gallery-images/photo-1-mobile.jpg" alt="Просторная пустынная равнина" width="280"
+            height="280">
+        </div>
+        <div class="card__text-wrapper">
+          <h3 class="card__title">Народные просторы</h3>
+          <p class="card__author">Автор фото: Борис</p>
+          <a class="card__likes" href="#">1350</a>
+        </div>
       </article>
 
       <article class="gallery-photo__card card">
-        <img class="card__image" src="img/gallery-images/photo-2.jpg" alt="Необычный кактус" width="280" height="280">
-        <h3 class="card__title">Местная растительность</h3>
-        <p class="card__author">Автор фото: Сергей</p>
-        <p class="card__likes"><b>143</b></p>
+        <div class="card__image-wrapper">
+          <img src="img/mobile/gallery-images/photo-2-mobile.jpg" alt="Необычный кактус" width="280" height="280">
+        </div>
+        <div class="card__text-wrapper">
+          <h3 class="card__title">Местная растительность</h3>
+          <p class="card__author">Автор фото: Сергей</p>
+          <a class="card__likes" href="#">143</a>
+        </div>
       </article>
 
       <article class="gallery-photo__card card">
-        <img class="card__image" src="img/gallery-images/photo-3.jpg" alt="Горная северная дорогая" width="280"
-          height="280">
-        <h3 class="card__title">Дорога на север</h3>
-        <p class="card__author">Автор фото: Петр</p>
-        <p class="card__likes"><b>96</b></p>
+        <div class="card__image-wrapper">
+          <img src="img/mobile/gallery-images/photo-3-mobile.jpg" alt="Горная северная дорогая" width="280"
+            height="280">
+        </div>
+        <div class="card__text-wrapper">
+          <h3 class="card__title">Дорога на север</h3>
+          <p class="card__author">Автор фото: Петр</p>
+          <a class="card__likes" href="#">96</a>
+        </div>
       </article>
 
       <article class="gallery-photo__card card">
-        <img class="card__image" src="img/gallery-images/photo-4.jpg" alt="Мост Дьявола" width="280" height="280">
-        <h3 class="card__title">Мост Дьявола</h3>
-        <p class="card__author">Автор фото: Антон</p>
-        <p class="card__likes"><b>254</b></p>
+        <div class="card__image-wrapper">
+          <img src="img/mobile/gallery-images/photo-4-mobile.jpg" alt="Мост Дьявола" width="280" height="280">
+        </div>
+        <div class="card__text-wrapper">
+          <h3 class="card__title">Мост Дьявола</h3>
+          <p class="card__author">Автор фото: Антон</p>
+          <a class="card__likes" href="#">254</a>
+        </div>
       </article>
     </section>
 
     <section class="gallery-video">
-      <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
-      <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!</p>
+      <div class="gallery-video__text-wrapper">
+        <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+        <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
       <!-- Видео -->
     </section>
   </main>
@@ -104,8 +124,10 @@
     </div>
 
     <div class="footer__copyright copyright">
-      Разработано
-      <img src="img/htmlacademy.svg" alt="HTML Academy" width="28" height="34">
+      <span class="copyright__text">Разработано</span>
+      <div class="copyright__image-wrapper">
+        <img src="img/htmlacademy.svg" alt="HTML Academy" width="28" height="34">
+      </div>
     </div>
   </footer>
 </body>
