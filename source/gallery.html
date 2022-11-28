@@ -38,18 +38,20 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Галерея Седоны</h1>
+    <section class="hero">
+      <div class="hero__image-wrapper">
+        <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
+      </div>
 
-    <div class="hero">
-      <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
-    </div>
-
-    <section class="gallery-photo">
-      <div class="gallery-photo__text-wrapper">
-        <h2 class="gallery-photo__title">Фото и видео</h2>
-        <p class="gallery-photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+      <div class="hero__text-wrapper">
+        <h1 class="hero__title">Фото и видео</h1>
+        <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
+    </section>
+
+    <section class="gallery-photo">
+      <h2 class="visually-hidden">Фотографии Седоны</h2>
 
       <article class="gallery-photo__card card">
         <a class="card__image-link" href="#">
@@ -57,6 +59,7 @@
             height="280">
           <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
         </a>
+
         <div class="card__text-wrapper">
           <h3 class="card__title">Неродные просторы</h3>
           <p class="card__author">Автор фото: Борис</p>
