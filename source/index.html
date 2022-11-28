@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo logo">
+      <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+    </a>
+
+    <nav class="header__navigation navigation">
+      <button class="navigation__button-toggle" type="button">
+        <span class="visually-hidden">Меню навигацию</span>
+      </button>
+
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current">Главная</a>
+        </li>
+
+        <li class="navigation__item">
+          <a class="navigation__link" href="gallery.html">Фото и видео</a>
+        </li>
+
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__image-wrapper">
+        <img src="img/mobile/hero-welcome-mobile.svg" alt="Добро пожаловать в Седону" width="282" height="214">
+      </div>
+
+      <div class="hero__text-wrapper">
+        <h1 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="hero__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Особенности Седоны</h2>
+
+      <div class="advantages__list">
+        <div class="advantages__item advantage advantage--full-row">
+          <div class="advantage__description-wrapper">
+            <h3 class="advantage__title">Настоящий городок</h3>
+            <span class="advantage__count">— №1 —</span>
+            <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="advantage__image-wrapper">
+            <img src="img/mobile/town-image-mobile.jpg" alt="Город в Седоне" width="320" height="260">
+          </div>
+        </div>
+
+        <!-- Блок с условиями проживания -->
+        <section class="accomodations">
+          <h3 class="visually-hidden">Условия проживания</h3>
+
+          <div class="accomodations__item accomodation">
+            <div class="accomodation__image-wrapper">
+              <img src="img/mobile/icon-house-mobile.svg" alt="Иконка дома" width="40" height="40">
+            </div>
+
+            <div class="accomodation__description-wrapper">
+              <h4 class="accomodation__title">Жилье</h4>
+              <p class="accomodation__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+          </div>
+
+          <div class="accomodations__item accomodation">
+            <div class="accomodation__image-wrapper">
+              <img src="img/mobile/icon-burger-mobile.svg" alt="Иконка бургера" width="40" height="40">
+            </div>
+            <div class="accomodation__description-wrapper">
+              <h4 class="accomodation__title">Еда</h4>
+              <p class="accomodation__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </div>
+
+          <div class="accomodations__item accomodation">
+            <div class="accomodation__image-wrapper">
+              <img src="img/mobile/icon-gift-mobile.svg" alt="Иконка коробки с подарками" width="40" height="40">
+            </div>
+            <div class="accomodation__description-wrapper">
+              <h4 class="accomodation__title">Сувениры</h4>
+              <p class="accomodation__description">Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="advantages__item advantage advantage--full-row">
+          <div class="advantage__description-wrapper">
+            <h3 class="advantage__title">Там есть мост дьявола</h3>
+            <span class="advantage__count">— №2 —</span>
+            <p class="advantage__description">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
+          </div>
+          <div class="advantage__image-wrapper">
+            <img src="img/mobile/bridge-image-mobile.jpg" alt="Мост Дьявола" width="320" height="260">
+          </div>
+        </div>
+
+        <div class="advantages__item advantage">
+          <div class="advantage__description-wrapper">
+            <h3 class="advantage__title">Небольшая площадь</h3>
+            <span class="advantage__count">— №3 —</span>
+            <p class="advantage__description">Все интересные места находятся очень близко</p>
+          </div>
+        </div>
+
+        <div class="advantages__item advantage">
+          <div class="advantage__description-wrapper">
+            <h3 class="advantage__title">Красивая дорога</h3>
+            <span class="advantage__count">— №4 —</span>
+            <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </div>
+
+        <div class="advantages__item advantage">
+          <div class="advantage__description-wrapper">
+            <h3 class="advantage__title">Мало туристов</h3>
+            <span class="advantage__count">— №5 —</span>
+            <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="search__wrapper">
+        <h2 class="search__title">Заинтересовались?</h2>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          Седоне
+        </p>
+        <a class="search__button button" href="#">Найти гостиницу</a>
+      </div>
+    </section>
+
+    <!-- Карта Седоны -->
+  </main>
+
+  <footer class="footer">
+    <a class="footer__hashtag">#VISITSEDONA</a>
+
+    <div class="footer__social social">
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Вконтакте</span>
+      </a>
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Телеграм</span>
+      </a>
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Youtube</span>
+      </a>
+    </div>
+
+    <div class="footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <div class="copyright__image-wrapper">
+        <!-- svg иконка -->
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
