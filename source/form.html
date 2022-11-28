@@ -86,16 +86,19 @@
             <span class="label__text">
               Контактный телефон<sup>*</sup>:
             </span>
-            <input class="label__input label__input--phone-icon" type="tel" name="contact-phone"
-              placeholder="Введите телефон" required>
+            <div class="label__input-wrapper label__input-wrapper--phone-icon">
+              <input class="label__input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
+            </div>
           </label>
 
           <label class="fieldset__label label">
             <span class="label__text">
               Электронная почта<sup>*</sup>:
             </span>
-            <input class="label__input label__input--mail-icon" type="email" name="e-mail" placeholder="Введите e-mail"
-              required>
+            <div class="label__input-wrapper label__input-wrapper--mail-icon">
+              <input class="label__input label__input--mail-icon" type="email" name="e-mail"
+                placeholder="Введите e-mail" required>
+            </div>
           </label>
         </fieldset>
 
@@ -121,7 +124,7 @@
         <fieldset class="form-review__fieldset fieldset">
           <legend class="fieldset__title">Посещенные достопримечательности:</legend>
 
-          <label class="fieldset__label label"">
+          <label class="fieldset__label label">
             <input class=" label__input" type="checkbox" name="devil-bridge" value="visited" checked>
             <span class=" label__text">Мост Дьявола</span>
           </label>
@@ -182,7 +185,7 @@
     </div>
   </footer>
 
-  <div class="modal modal--error">
+  <div class="modal modal--error modal--hidden">
     <div class="modal__text-wrapper">
       <h2 class="modal__title">Что-то пошло не так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -192,7 +195,7 @@
     </div>
   </div>
 
-  <div class="modal modal--success">
+  <div class="modal modal--success modal--hidden">
     <div class="modal__text-wrapper">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
