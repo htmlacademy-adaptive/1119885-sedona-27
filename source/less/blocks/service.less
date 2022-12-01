@@ -1,5 +1,19 @@
 .service {
   position: relative;
+  text-transform: uppercase;
+  padding: 25px 20px 0;
+
+  &--last {
+    padding-bottom: 45px;
+  }
+}
+
+.service__image-wrapper {
+  position: absolute;
+}
+
+.service__text-wrapper {
+  padding-left: 45px;
 }
 
 .service__title {
@@ -7,16 +21,8 @@
   line-height: @large-line-height;
 }
 
-.service__description-wrapper {
-  padding: 25px 20px 0 65px;
-}
-
-.service__image-wrapper {
-  position: absolute;
-  top: 25px;
-  left: 18px;
-}
-
-.service__description {
+.service__text {
+  font-size: @medium-size;
+  line-height: @medium-line-height;
   color: #333333;
 }

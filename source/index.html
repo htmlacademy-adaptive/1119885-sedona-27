@@ -9,39 +9,39 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__logo logo">
-      <a class="logo__link">
+    <div class="header__logo">
+      <a class="logo">
         <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
       </a>
     </div>
 
     <nav class="header__navigation navigation">
-      <button class="navigation__button-toggle" type="button">
+      <button class="navigation__menu-button menu-button" type="button">
         <span class="visually-hidden">Меню навигации</span>
       </button>
 
-      <ul class="navigation__list navigation__list--hidden">
+      <ul class="navigation__list navigation-list navigation-list--hidden">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Главная</a>
+          <a class="navigation__link navigation-link navigation-link--current">Главная</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link" href="gallery.html">Фото и видео</a>
+          <a class="navigation__link navigation-link" href="gallery.html">Фото и видео</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Форма отзыва</a>
+          <a class="navigation__link navigation-link" href="form.html">Форма отзыва</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link" href="#">HTML Academy</a>
+          <a class="navigation__link navigation-link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <section class="hero hero--full">
+    <section class="hero">
       <div class="hero__image-wrapper">
         <img src="img/mobile/hero-welcome-mobile.svg" alt="Добро пожаловать в Седону" width="282" height="214">
       </div>
@@ -56,11 +56,11 @@
       <h2 class="visually-hidden">Особенности Седоны</h2>
 
       <div class="advantages__list">
-        <div class="advantages__item advantage advantage--full-row">
-          <div class="advantage__description-wrapper">
+        <div class="advantages__item advantage advantage--detailed advantage--decoration">
+          <div class="advantage__text-wrapper">
             <h3 class="advantage__title">Настоящий городок</h3>
-            <span class="advantage__count">— №1 —</span>
-            <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <span class="advantage__number">— №1 —</span>
+            <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantage__image-wrapper">
             <img src="img/mobile/town-image-mobile.jpg" alt="Город в Седоне" width="320" height="260">
@@ -70,44 +70,45 @@
         <!-- Блок с условиями проживания -->
         <section class="services">
           <h3 class="visually-hidden">Услуги</h3>
+          <div class="services__list">
+            <div class="services__item service">
+              <div class="service__image-wrapper">
+                <img src="img/mobile/icon-house-mobile.svg" alt="Иконка дома" width="40" height="40">
+              </div>
 
-          <div class="services__item service">
-            <div class="service__image-wrapper">
-              <img src="img/mobile/icon-house-mobile.svg" alt="Иконка дома" width="40" height="40">
+              <div class="service__text-wrapper">
+                <h4 class="service__title">Жилье</h4>
+                <p class="service__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </div>
 
-            <div class="service__description-wrapper">
-              <h4 class="service__title">Жилье</h4>
-              <p class="service__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <div class="services__item service">
+              <div class="service__image-wrapper">
+                <img src="img/mobile/icon-burger-mobile.svg" alt="Иконка бургера" width="40" height="40">
+              </div>
+              <div class="service__text-wrapper">
+                <h4 class="service__title">Еда</h4>
+                <p class="service__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </div>
-          </div>
 
-          <div class="services__item service">
-            <div class="service__image-wrapper">
-              <img src="img/mobile/icon-burger-mobile.svg" alt="Иконка бургера" width="40" height="40">
-            </div>
-            <div class="service__description-wrapper">
-              <h4 class="service__title">Еда</h4>
-              <p class="service__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-          </div>
-
-          <div class="services__item service">
-            <div class="service__image-wrapper">
-              <img src="img/mobile/icon-gift-mobile.svg" alt="Иконка коробки с подарками" width="40" height="40">
-            </div>
-            <div class="service__description-wrapper">
-              <h4 class="service__title">Сувениры</h4>
-              <p class="service__description">Не только китайского, но и местного производства!</p>
+            <div class="services__item service">
+              <div class="service__image-wrapper">
+                <img src="img/mobile/icon-gift-mobile.svg" alt="Иконка коробки с подарками" width="40" height="40">
+              </div>
+              <div class="service__text-wrapper">
+                <h4 class="service__title">Сувениры</h4>
+                <p class="service__text">Не только китайского, но и местного производства!</p>
+              </div>
             </div>
           </div>
         </section>
 
-        <div class="advantages__item advantage advantage--full-row">
-          <div class="advantage__description-wrapper">
+        <div class="advantages__item advantage advantage--detailed">
+          <div class="advantage__text-wrapper">
             <h3 class="advantage__title">Там есть мост дьявола</h3>
-            <span class="advantage__count">— №2 —</span>
-            <p class="advantage__description">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
+            <span class="advantage__number">— №2 —</span>
+            <p class="advantage__text">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
           </div>
           <div class="advantage__image-wrapper">
             <img src="img/mobile/bridge-image-mobile.jpg" alt="Мост Дьявола" width="320" height="260">
@@ -115,26 +116,26 @@
         </div>
 
         <div class="advantages__item advantage">
-          <div class="advantage__description-wrapper">
+          <div class="advantage__text-wrapper">
             <h3 class="advantage__title">Небольшая площадь</h3>
-            <span class="advantage__count">— №3 —</span>
-            <p class="advantage__description">Все интересные места находятся очень близко</p>
+            <span class="advantage__number">— №3 —</span>
+            <p class="advantage__text">Все интересные места находятся очень близко</p>
           </div>
         </div>
 
         <div class="advantages__item advantage">
-          <div class="advantage__description-wrapper">
+          <div class="advantage__text-wrapper">
             <h3 class="advantage__title">Красивая дорога</h3>
-            <span class="advantage__count">— №4 —</span>
-            <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <span class="advantage__number">— №4 —</span>
+            <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </div>
 
         <div class="advantages__item advantage">
-          <div class="advantage__description-wrapper">
+          <div class="advantage__text-wrapper">
             <h3 class="advantage__title">Мало туристов</h3>
-            <span class="advantage__count">— №5 —</span>
-            <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <span class="advantage__number">— №5 —</span>
+            <p class="advantage__text">Большинство едет в Гранд&nbsp;Каньон и&nbsp;толпится там</p>
           </div>
         </div>
       </div>
@@ -147,29 +148,27 @@
           Седоне
         </p>
       </div>
-      <div class="search__button-wrapper">
-        <a class="search__button button" href="#">Найти гостиницу</a>
-      </div>
+      <a class="search__button button" href="#">Найти гостиницу</a>
     </section>
 
     <!-- Карта Седоны -->
   </main>
 
   <footer class="footer">
-    <div class="footer__hashtag hashtag">
-      <a class="hashtag__link" href="#">#VISITSEDONA</a>
+    <div class="footer__hashtag">
+      <a class="hashtag" href="#">#VISITSEDONA</a>
     </div>
 
-    <div class="footer__social social">
-      <a class="social__link" href="#">
+    <div class="footer__social">
+      <a class="social" href="#">
         <span class="visually-hidden">Вконтакте</span>
       </a>
 
-      <a class="social__link" href="#">
+      <a class="social" href="#">
         <span class="visually-hidden">Телеграм</span>
       </a>
 
-      <a class="social__link" href="#">
+      <a class="social" href="#">
         <span class="visually-hidden">Youtube</span>
       </a>
     </div>

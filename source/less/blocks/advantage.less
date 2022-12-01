@@ -1,4 +1,6 @@
 .advantage {
+  text-transform: uppercase;
+  text-align: center;
   background-color: #eeeeee;
 
   &--full-row {
@@ -7,17 +9,8 @@
   }
 }
 
-.advantage--full-row .advantage__description-wrapper {
-  padding: 38px 20px;
-}
-
-.advantage__description-wrapper {
-  text-align: center;
+.advantage__text-wrapper {
   padding: 24px 20px;
-}
-
-.advantage:first-child .advantage__description-wrapper {
-  background: url("../../img/mobile/hero-triangle-mobile.svg") no-repeat 0 -20px;
 }
 
 .advantage__image-wrapper img {
@@ -29,12 +22,31 @@
   line-height: @large-line-height;
 }
 
-.advantage__description,
-.advantage__count {
+.advantage__text,
+.advantage__number {
   color: #333333;
+  font-size: @medium-size;
+  line-height: @medium-line-height;
 }
 
-.advantage--full-row .advantage__description,
-.advantage--full-row .advantage__count {
+.advantage--detailed {
+  background-color: @light-blue;
+}
+
+.advantage--detailed .advantage__text-wrapper {
+  padding: 40px 20px;
+}
+
+.advantage--detailed .advantage__title,
+.advantage--detailed .advantage__number,
+.advantage--detailed .advantage__text {
   color: #ffffff;
+}
+
+.advantage--decoration {
+  background: @light-blue url("../img/mobile/decorative-triangle-mobile.svg") no-repeat 0 -18px;
+}
+
+.advantage--decoration .advantage__text-wrapper {
+  padding: 54px 20px 40px;
 }
