@@ -1,0 +1,40 @@
+.advantage {
+  background-color: #eeeeee;
+
+  &--full-row {
+    background-color: @light-blue;
+    color: #ffffff;
+  }
+}
+
+.advantage--full-row .advantage__description-wrapper {
+  padding: 38px 20px;
+}
+
+.advantage__description-wrapper {
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.advantage:first-child .advantage__description-wrapper {
+  background: url("../../img/mobile/hero-triangle-mobile.svg") no-repeat 0 -20px;
+}
+
+.advantage__image-wrapper img {
+  display: block;
+}
+
+.advantage__title {
+  font-size: @large-size;
+  line-height: @large-line-height;
+}
+
+.advantage__description,
+.advantage__count {
+  color: #333333;
+}
+
+.advantage--full-row .advantage__description,
+.advantage--full-row .advantage__count {
+  color: #ffffff;
+}

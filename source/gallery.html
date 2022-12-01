@@ -4,20 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo" href="index.html">
-      <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
-    </a>
+    <div class="header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+      </a>
+    </div>
 
     <nav class="header__navigation navigation">
       <button class="navigation__button-toggle" type="button">
-        <span class="visually-hidden">Меню навигацию</span>
+        <span class="visually-hidden">Меню навигации</span>
       </button>
 
-      <ul class="navigation__list">
+      <ul class="navigation__list navigation__list--hidden">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
@@ -68,7 +71,7 @@
       </article>
 
       <article class="gallery-photo__card card">
-        <a class="card__image-wrapper" href="#">
+        <a class="card__image-link" href="#">
           <img src="img/mobile/gallery-images/photo-2-mobile.jpg" alt="Необычный кактус" width="280" height="280">
           <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
         </a>
@@ -80,7 +83,7 @@
       </article>
 
       <article class="gallery-photo__card card">
-        <a class="card__image-wrapper" href="#">
+        <a class="card__image-link" href="#">
           <img src="img/mobile/gallery-images/photo-3-mobile.jpg" alt="Горная северная дорогая" width="280"
             height="280">
           <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
@@ -93,7 +96,7 @@
       </article>
 
       <article class="gallery-photo__card card">
-        <a class="card__image-wrapper" href="#">
+        <a class="card__image-link" href="#">
           <img src="img/mobile/gallery-images/photo-4-mobile.jpg" alt="Мост Дьявола" width="280" height="280">
           <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
         </a>
@@ -121,15 +124,19 @@
   </main>
 
   <footer class="footer">
-    <span class="footer__hashtag">#VISITSEDONA</span>
+    <div class="footer__hashtag hashtag">
+      <a class="hashtag__link" href="#">#VISITSEDONA</a>
+    </div>
 
     <div class="footer__social social">
       <a class="social__link" href="#">
         <span class="visually-hidden">Вконтакте</span>
       </a>
+
       <a class="social__link" href="#">
         <span class="visually-hidden">Телеграм</span>
       </a>
+
       <a class="social__link" href="#">
         <span class="visually-hidden">Youtube</span>
       </a>

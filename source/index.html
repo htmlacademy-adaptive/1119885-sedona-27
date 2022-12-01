@@ -4,20 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo">
-      <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
-    </a>
+    <div class="header__logo logo">
+      <a class="logo__link">
+        <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+      </a>
+    </div>
 
     <nav class="header__navigation navigation">
       <button class="navigation__button-toggle" type="button">
-        <span class="visually-hidden">Меню навигацию</span>
+        <span class="visually-hidden">Меню навигации</span>
       </button>
 
-      <ul class="navigation__list">
+      <ul class="navigation__list navigation__list--hidden">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current">Главная</a>
         </li>
@@ -38,7 +41,7 @@
   </header>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero hero--full">
       <div class="hero__image-wrapper">
         <img src="img/mobile/hero-welcome-mobile.svg" alt="Добро пожаловать в Седону" width="282" height="214">
       </div>
@@ -65,37 +68,37 @@
         </div>
 
         <!-- Блок с условиями проживания -->
-        <section class="accomodations">
-          <h3 class="visually-hidden">Условия проживания</h3>
+        <section class="services">
+          <h3 class="visually-hidden">Услуги</h3>
 
-          <div class="accomodations__item accomodation">
-            <div class="accomodation__image-wrapper">
+          <div class="services__item service">
+            <div class="service__image-wrapper">
               <img src="img/mobile/icon-house-mobile.svg" alt="Иконка дома" width="40" height="40">
             </div>
 
-            <div class="accomodation__description-wrapper">
-              <h4 class="accomodation__title">Жилье</h4>
-              <p class="accomodation__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <div class="service__description-wrapper">
+              <h4 class="service__title">Жилье</h4>
+              <p class="service__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </div>
 
-          <div class="accomodations__item accomodation">
-            <div class="accomodation__image-wrapper">
+          <div class="services__item service">
+            <div class="service__image-wrapper">
               <img src="img/mobile/icon-burger-mobile.svg" alt="Иконка бургера" width="40" height="40">
             </div>
-            <div class="accomodation__description-wrapper">
-              <h4 class="accomodation__title">Еда</h4>
-              <p class="accomodation__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <div class="service__description-wrapper">
+              <h4 class="service__title">Еда</h4>
+              <p class="service__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </div>
 
-          <div class="accomodations__item accomodation">
-            <div class="accomodation__image-wrapper">
+          <div class="services__item service">
+            <div class="service__image-wrapper">
               <img src="img/mobile/icon-gift-mobile.svg" alt="Иконка коробки с подарками" width="40" height="40">
             </div>
-            <div class="accomodation__description-wrapper">
-              <h4 class="accomodation__title">Сувениры</h4>
-              <p class="accomodation__description">Не только китайского, но и местного производства!</p>
+            <div class="service__description-wrapper">
+              <h4 class="service__title">Сувениры</h4>
+              <p class="service__description">Не только китайского, но и местного производства!</p>
             </div>
           </div>
         </section>
@@ -138,11 +141,13 @@
     </section>
 
     <section class="search">
-      <div class="search__wrapper">
+      <div class="search__text-wrapper">
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне
         </p>
+      </div>
+      <div class="search__button-wrapper">
         <a class="search__button button" href="#">Найти гостиницу</a>
       </div>
     </section>
@@ -151,25 +156,31 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__hashtag">#VISITSEDONA</a>
+    <div class="footer__hashtag hashtag">
+      <a class="hashtag__link" href="#">#VISITSEDONA</a>
+    </div>
 
     <div class="footer__social social">
       <a class="social__link" href="#">
         <span class="visually-hidden">Вконтакте</span>
       </a>
+
       <a class="social__link" href="#">
         <span class="visually-hidden">Телеграм</span>
       </a>
+
       <a class="social__link" href="#">
         <span class="visually-hidden">Youtube</span>
       </a>
     </div>
 
     <div class="footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <div class="copyright__image-wrapper">
-        <!-- svg иконка -->
-      </div>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
+        <div class="copyright__image-wrapper">
+          <!-- svg иконка -->
+        </div>
+      </a>
     </div>
   </footer>
 </body>
