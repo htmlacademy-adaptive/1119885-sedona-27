@@ -42,12 +42,12 @@
 
   <main class="main">
     <section class="hero">
-      <div class="hero__image-wrapper">
+      <div class="hero__image-wrapper hero__image-wrapper--small">
         <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
       </div>
 
       <div class="hero__text-wrapper">
-        <h1 class="hero__title">Оставьте свой отзыв</h1>
+        <h1 class="hero__title hero__title--margin-smaller">Оставьте свой отзыв</h1>
         <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </div>
@@ -57,50 +57,41 @@
       <h2 class="visually-hidden">Форма отзыва</h2>
 
       <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-review__fieldset fieldset fieldset--half-screen">
+        <fieldset class="form-review__fieldset fieldset">
           <legend class="fieldset__title">Представьтесь:</legend>
 
           <label class="fieldset__label label">
-            <span class="label__text">
-              Имя<sup>*</sup>:
-            </span>
-            <input class="label__input" type="text" name="name" value="Пётр" required>
+            <span class="label__text">Имя*:</span>
+            <input class="label__input input" type="text" name="name" value="Пётр" placeholder="Введите имя" required>
           </label>
 
           <label class="fieldset__label label">
-            <span class="label__text">
-              Фамилия<sup>*</sup>:
-            </span>
-            <input class="label__input" type="text" name="surname" value="Пустота" required>
+            <span class="label__text">Фамилия*:</span>
+            <input class="label__input input" type="text" name="surname" value="Пустота" placeholder="Введите фамилию"
+              required>
           </label>
 
-          <label class="fieldset__label label">
-            <span class="label__text">
-              Отчество:
-            </span>
-            <input class="label__input" type="text" name="patronymic" value="Викторович">
+          <label class="fieldset__label label fieldset__label--last">
+            <span class="label__text">Отчество:</span>
+            <input class="label__input input" type="text" name="patronymic" value="Викторович"
+              placeholder="Введите отчество">
           </label>
         </fieldset>
 
-        <fieldset class="form-review__fieldset fieldset fieldset--half-screen">
+        <fieldset class="form-review__fieldset fieldset">
           <legend class="fieldset__title">Контактная информация:</legend>
 
           <label class="fieldset__label label">
-            <span class="label__text">
-              Контактный телефон<sup>*</sup>:
-            </span>
+            <span class="label__text">Контактный телефон*:</span>
             <div class="label__input-wrapper label__input-wrapper--phone-icon">
-              <input class="label__input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
+              <input class="label__input input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
             </div>
           </label>
 
-          <label class="fieldset__label label">
-            <span class="label__text">
-              Электронная почта<sup>*</sup>:
-            </span>
+          <label class="fieldset__label label fieldset__label--last">
+            <span class="label__text">Электронная почта*:</span>
             <div class="label__input-wrapper label__input-wrapper--mail-icon">
-              <input class="label__input label__input--mail-icon" type="email" name="e-mail"
-                placeholder="Введите e-mail" required>
+              <input class="label__input input" type="email" name="e-mail" placeholder="Введите e-mail" required>
             </div>
           </label>
         </fieldset>
@@ -108,88 +99,111 @@
         <fieldset class="form-review__fieldset fieldset">
           <legend class="fieldset__title">Ваше общее впечатление:</legend>
 
-          <label class="fieldset__label label label--bold">
-            <input class="label__input" type="radio" name="impression" value="positive" checked>
-            <span class="label__text">Скорее положительное</span>
+          <label class="fieldset__label label">
+            <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
+            <span class="label__text label__text--bold">Скорее положительное</span>
           </label>
 
-          <label class="fieldset__label label label--bold">
-            <input class="label__input" type="radio" name="impression" value="negative">
-            <span class="label__text">Скорее отрицательное</span>
+          <label class="fieldset__label label">
+            <input class="visually-hidden" type="radio" name="impression" value="negative">
+            <span class="label__text label__text--bold">Скорее отрицательное</span>
           </label>
 
-          <label class="fieldset__label label label--bold">
-            <input class="label__input" type="radio" name="impression" value="neutral">
-            <span class="label__text">Затрудняюсь ответить</span>
+          <label class="fieldset__label label fieldset__label--last">
+            <input class="visually-hidden" type="radio" name="impression" value="neutral">
+            <span class="label__text label__text--bold">Затрудняюсь ответить</span>
           </label>
         </fieldset>
 
         <fieldset class="form-review__fieldset fieldset">
           <legend class="fieldset__title">Посещенные достопримечательности:</legend>
 
-          <label class="fieldset__label label label--bold">
-            <input class=" label__input" type="checkbox" name="devil-bridge" value="visited" checked>
-            <span class=" label__text">Мост Дьявола</span>
+          <label class="fieldset__label label">
+            <input class="visually-hidden" type="checkbox" name="devil-bridge" value="visited" checked>
+            <span class=" label__text label__text--bold">Мост Дьявола</span>
           </label>
 
-          <label class="fieldset__label label label--bold">
-            <input class="label__input" type="checkbox" name="mountain-bell" value="visited" checked>
-            <span class="label__text">Гора-Колокол</span>
+          <label class="fieldset__label label">
+            <input class="visually-hidden" type="checkbox" name="mountain-bell" value="visited" checked>
+            <span class="label__text label__text--bold">Гора-Колокол</span>
           </label>
 
-          <label class="fieldset__label label label--bold">
-            <input class="label__input" type="checkbox" name="slide-park" value="visited" checked>
-            <span class="label__text">Слайд-Парк</span>
+          <label class="fieldset__label label">
+            <input class="visually-hidden" type="checkbox" name="slide-park" value="visited" checked>
+            <span class="label__text label__text--bold">Слайд-Парк</span>
           </label>
 
-          <label class="fieldset__label label label--bold">
-            <input class="label__input" type="checkbox" name="red-rocks" value="visited">
-            <span class="label__text">Красные скалы</span>
+          <label class="fieldset__label label fieldset__label--last">
+            <input class="visually-hidden" type="checkbox" name="red-rocks" value="visited">
+            <span class="label__text label__text--bold">Красные скалы</span>
           </label>
         </fieldset>
 
         <fieldset class="form-review__fieldset fieldset">
           <legend class="fieldset__title">Опишите свои эмоции:</legend>
 
-          <label class="fieldset__label label">
-            <textarea class="label__textarea" name="feeling"
+          <label class="fieldset__label label fieldset__label--last">
+            <textarea class="label__textarea textarea" name="emotions"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
 
         <div class="form-review__button-wrapper">
           <button class="form-review__button button" type="submit">Отправить отзыв</button>
-          <p class="form-review__meta"><sup>*</sup> — обязательные поля</p>
+          <p class="form-review__meta">* — обязательные поля</p>
         </div>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__hashtag hashtag">
-      <a class="hashtag__link" href="#">#VISITSEDONA</a>
+    <div class="footer__hashtag">
+      <a class="hashtag" href="#">#VISITSEDONA</a>
     </div>
 
-    <div class="footer__social social">
-      <a class="social__link" href="#">
+    <div class="footer__social">
+      <a class="social" href="#">
         <span class="visually-hidden">Вконтакте</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#a)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+              fill="#fff" />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h24v24H0z" />
+            </clipPath>
+          </defs>
+        </svg>
       </a>
 
-      <a class="social__link" href="#">
+      <a class="social" href="#">
         <span class="visually-hidden">Телеграм</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
+            fill="#fff" />
+        </svg>
       </a>
 
-      <a class="social__link" href="#">
+      <a class="social" href="#">
         <span class="visually-hidden">Youtube</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
+            fill="#fff" />
+        </svg>
       </a>
     </div>
 
     <div class="footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <div class="copyright__image-wrapper">
-          <!-- svg иконка -->
-        </div>
+        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <path fill="#000000"
+            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+        </svg>
       </a>
     </div>
   </footer>

@@ -1,15 +1,16 @@
 .service {
   position: relative;
   text-transform: uppercase;
-  padding: 25px 20px 0;
+  margin-bottom: 25px;
 
   &--last {
-    padding-bottom: 45px;
+    margin-bottom: 0;
   }
 }
 
 .service__image-wrapper {
   position: absolute;
+  top: -5px;
 }
 
 .service__text-wrapper {
@@ -17,11 +18,13 @@
 }
 
 .service__title {
+  margin: 8px 0 16px;
   font-size: @large-size;
   line-height: @large-line-height;
 }
 
 .service__text {
+  margin: 0;
   font-size: @medium-size;
   line-height: @medium-line-height;
   color: #333333;
