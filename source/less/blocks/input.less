@@ -1,7 +1,6 @@
 .input {
   font-family: inherit;
-  font-size: @large-size;
-  line-height: @large-line-height;
+  .text-size(18px, 26px);
   font-weight: 700;
   padding: 16px;
   box-sizing: border-box;
@@ -10,6 +9,6 @@
   background-color: #f2f2f2;
 
   &::placeholder {
-    color: fade(#000000, 30%);
+    color: fade(@black, 30%);
   }
 }

@@ -3,16 +3,14 @@
 }
 
 .label__text {
-  color: #333333;
+  color: @dark-gray;
   padding-left: 16px;
-  font-size: @medium-size;
-  line-height: @medium-line-height;
+  .text-size(14px, 21px);
   text-transform: uppercase;
 
   &--bold {
     font-weight: 700;
-    font-size: @large-size;
-    line-height: @large-line-height;
+    .text-size(18px, 26px);
     text-transform: none;
   }
 }
@@ -24,8 +22,7 @@
   width: 280px;
   min-height: 150px;
   resize: none;
-  font-size: @large-size;
-  line-height: @large-line-height;
+  .text-size(18px, 26px);
   font-family: inherit;
   background-color: #f2f2f2;
 }

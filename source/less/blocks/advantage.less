@@ -3,9 +3,12 @@
   text-align: center;
   background-color: #eeeeee;
 
-  &--full-row {
+  &--detailed {
     background-color: @light-blue;
-    color: #ffffff;
+  }
+
+  &--decoration {
+    background: @light-blue url("../img/mobile/decorative-triangle-mobile.svg") no-repeat 0 -18px;
   }
 }
 
@@ -20,24 +23,18 @@
 .advantage__title {
   margin: 0;
   margin-bottom: 15px;
-  font-size: @large-size;
-  line-height: @large-line-height;
+  .text-size(18px, 26px);
 }
 
 .advantage__text,
 .advantage__number {
   margin: 0;
-  color: #333333;
-  font-size: @medium-size;
-  line-height: @medium-line-height;
+  color: @dark-gray;
+  .text-size(14px, 21px);
 }
 
 .advantage__number {
   margin-bottom: 15px;
-}
-
-.advantage--detailed {
-  background-color: @light-blue;
 }
 
 .advantage--detailed .advantage__text-wrapper {
@@ -47,11 +44,7 @@
 .advantage--detailed .advantage__title,
 .advantage--detailed .advantage__number,
 .advantage--detailed .advantage__text {
-  color: #ffffff;
-}
-
-.advantage--decoration {
-  background: @light-blue url("../img/mobile/decorative-triangle-mobile.svg") no-repeat 0 -18px;
+  color: @white;
 }
 
 .advantage--decoration .advantage__text-wrapper {
