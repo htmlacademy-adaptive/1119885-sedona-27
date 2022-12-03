@@ -1,27 +1,27 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff");
+  src: url("/source/fonts/ptsans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("/source/fonts/ptsans.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff") format("woff");
+  src: url("/source/fonts/ptsansbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("/source/fonts/ptsansbold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -77,7 +77,7 @@
   display: block;
   width: 56px;
   height: 56px;
-  background: url("../img/mobile/icon-menu-mobile.svg") no-repeat center;
+  background: url("/source/img/mobile/icon-menu-mobile.svg") no-repeat center;
   border: none;
   padding: 17px 20px;
   cursor: pointer;
@@ -105,10 +105,10 @@
 }
 .hero__image-wrapper {
   padding: 90px 20px 85px;
-  background: url("../img/mobile/hero-triangle-mobile.svg") no-repeat bottom, #81b3d2 url("../img/mobile/hero-bg-mobile.jpg") no-repeat 0 0 / 100%;
+  background: url("/source/img/mobile/hero-triangle-mobile.svg") no-repeat bottom, #81b3d2 url("/source/img/mobile/hero-bg-mobile.jpg") no-repeat 0 0 / 100%;
 }
 .hero__image-wrapper--small {
-  background: url("../img/mobile/hero-triangle-mobile.svg") no-repeat bottom, #81b3d2 url("../img/mobile/hero-bg-mobile.jpg") no-repeat 0 100% / 100%;
+  background: url("/source/img/mobile/hero-triangle-mobile.svg") no-repeat bottom, #81b3d2 url("/source/img/mobile/hero-bg-mobile.jpg") no-repeat 0 100% / 100%;
 }
 .hero__image-wrapper img {
   display: block;
