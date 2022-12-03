@@ -53,6 +53,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  margin: auto;
   width: 185px;
   height: 96px;
   margin: 0 auto;
@@ -138,9 +139,11 @@
   text-align: center;
   background-color: #eeeeee;
 }
-.advantage--full-row {
+.advantage--detailed {
   background-color: #81b3d2;
-  color: #ffffff;
+}
+.advantage--decoration {
+  background: #81b3d2 url("../img/mobile/decorative-triangle-mobile.svg") no-repeat 0 -18px;
 }
 .advantage__text-wrapper {
   padding: 24px 20px;
@@ -164,9 +167,6 @@
 .advantage__number {
   margin-bottom: 15px;
 }
-.advantage--detailed {
-  background-color: #81b3d2;
-}
 .advantage--detailed .advantage__text-wrapper {
   padding: 40px 20px;
 }
@@ -174,9 +174,6 @@
 .advantage--detailed .advantage__number,
 .advantage--detailed .advantage__text {
   color: #ffffff;
-}
-.advantage--decoration {
-  background: #81b3d2 url("../img/mobile/decorative-triangle-mobile.svg") no-repeat 0 -18px;
 }
 .advantage--decoration .advantage__text-wrapper {
   padding: 54px 20px 40px;
@@ -299,17 +296,18 @@
   display: block;
 }
 .video__play-button {
-  display: block;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+  display: block;
   width: 48px;
   height: 54px;
   background: transparent url("../img/play-button.svg") no-repeat;
   border: none;
+  cursor: pointer;
 }
 .form-review {
   padding: 0 0 24px;
@@ -426,7 +424,7 @@
   position: relative;
   width: 48px;
   height: 48px;
-  background-color: #82b3d2;
+  background-color: #81b3d2;
 }
 .social svg {
   position: absolute;
