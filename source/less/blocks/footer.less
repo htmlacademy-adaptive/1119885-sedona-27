@@ -14,3 +14,24 @@
   justify-content: center;
   margin-bottom: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 75px 23px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__social,
+  .footer__hashtag {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    padding: 30px 135px 23px;
+  }
+}

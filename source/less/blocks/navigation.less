@@ -15,6 +15,46 @@
   }
 }
 
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &--hidden {
+    display: none;
+  }
+}
+
 .navigation__link {
   .navigation-link-style();
+  box-sizing: border-box;
+  min-height: 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__link {
+    .text-size(14px, 21px);
+    color: @black;
+    background-color: @white;
+
+    &--current {
+      color: #766357;
+    }
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .navigation__item {
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  .navigation__item:nth-child(4n + 2) {
+    margin-right: 150px;
+  }
 }
