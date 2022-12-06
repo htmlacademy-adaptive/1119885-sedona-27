@@ -1,7 +1,7 @@
 .fieldset {
   border: none;
   margin: 0;
-  padding: 24px 20px;
+  padding: 0 20px 35px;
 }
 
 .fieldset__title {
@@ -11,12 +11,29 @@
   .text-size(18px, 26px);
   padding: 0;
   padding-top: 24px;
+  margin-bottom: 25px;
 }
 
-.fieldset__label {
+.fieldset__text-input {
   margin-bottom: 16px;
 
-  &--last {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__radio-input {
+  margin-bottom: 36px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__checkbox-input {
+  margin-bottom: 36px;
+
+  &:last-child {
     margin-bottom: 0;
   }
 }

@@ -9,32 +9,30 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__logo">
-      <a class="logo" href="index.html">
-        <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
-      </a>
-    </div>
+    <a class="header__logo" href="index.html">
+      <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+    </a>
 
     <nav class="header__navigation navigation">
-      <button class="navigation__menu-button menu-button" type="button">
+      <button class="navigation__menu-button navigation__menu-button--hidden" type="button">
         <span class="visually-hidden">Меню навигации</span>
       </button>
 
-      <ul class="navigation__list navigation-list navigation-list--hidden">
+      <ul class="navigation__list navigation-list">
         <li class="navigation__item">
-          <a class="navigation__link navigation-link" href="index.html">Главная</a>
+          <a class="navigation__link " href="index.html">Главная</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link navigation-link navigation-link--current">Фото и видео</a>
+          <a class="navigation__link navigation__link--current">Фото и видео</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link navigation-link" href="form.html">Форма отзыва</a>
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link navigation-link" href="#">HTML Academy</a>
+          <a class="navigation__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -66,7 +64,7 @@
         <div class="card__text-wrapper">
           <h3 class="card__title">Неродные просторы</h3>
           <p class="card__author">Автор фото: Борис</p>
-          <a class="card__like" href="#">1350</a>
+          <a class="card__likes" href="#">1350</a>
         </div>
       </article>
 
@@ -78,7 +76,7 @@
         <div class="card__text-wrapper">
           <h3 class="card__title">Местная растительность</h3>
           <p class="card__author">Автор фото: Сергей</p>
-          <a class="card__like" href="#">143</a>
+          <a class="card__likes" href="#">143</a>
         </div>
       </article>
 
@@ -91,7 +89,7 @@
         <div class="card__text-wrapper">
           <h3 class="card__title">Дорога на север</h3>
           <p class="card__author">Автор фото: Петр</p>
-          <a class="card__like" href="#">96</a>
+          <a class="card__likes" href="#">96</a>
         </div>
       </article>
 
@@ -103,7 +101,7 @@
         <div class="card__text-wrapper">
           <h3 class="card__title">Мост Дьявола</h3>
           <p class="card__author">Автор фото: Антон</p>
-          <a class="card__like" href="#">254</a>
+          <a class="card__likes" href="#">254</a>
         </div>
       </article>
     </section>
@@ -118,7 +116,7 @@
         <div class="video__image-wrapper">
           <img src="img/mobile/video-image-mobile.jpg" alt="Превью для видео">
         </div>
-        <button class="video__play-button">
+        <button class="video__play-button" type="button">
           <span class="visually-hidden">Нажмите, чтобы воспроизвести видео</span>
         </button>
       </div>
@@ -130,8 +128,8 @@
       <a class="hashtag" href="#">#VISITSEDONA</a>
     </div>
 
-    <div class="footer__social">
-      <a class="social" href="#">
+    <div class="footer__social social">
+      <a class="social__link" href="#">
         <span class="visually-hidden">Вконтакте</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#a)">
@@ -147,7 +145,7 @@
         </svg>
       </a>
 
-      <a class="social" href="#">
+      <a class="social__link" href="#">
         <span class="visually-hidden">Телеграм</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -156,7 +154,7 @@
         </svg>
       </a>
 
-      <a class="social" href="#">
+      <a class="social__link" href="#">
         <span class="visually-hidden">Youtube</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

@@ -1,16 +1,20 @@
 .navigation {
   .text-size(18px, 26px);
-}
-
-.navigation__list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
 }
 
 .navigation__menu-button {
-  position: relative;
-  margin-left: auto;
+  .menu-button-style();
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 1;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.navigation__link {
+  .navigation-link-style();
 }

@@ -3,38 +3,37 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <div class="header__logo">
-      <a class="logo">
-        <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
-      </a>
-    </div>
+    <a class="header__logo">
+      <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+    </a>
 
     <nav class="header__navigation navigation">
-      <button class="navigation__menu-button menu-button" type="button">
+      <button class="navigation__menu-button navigation__menu-button--hidden" type="button">
         <span class="visually-hidden">Меню навигации</span>
       </button>
 
-      <ul class="navigation__list navigation-list navigation-list--hidden">
+      <ul class="navigation__list navigation-list">
         <li class="navigation__item">
-          <a class="navigation__link navigation-link navigation-link--current">Главная</a>
+          <a class="navigation__link navigation__link--current">Главная</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link navigation-link" href="gallery.html">Фото и видео</a>
+          <a class="navigation__link" href="gallery.html">Фото и видео</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link navigation-link" href="form.html">Форма отзыва</a>
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link navigation-link" href="#">HTML Academy</a>
+          <a class="navigation__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -46,7 +45,7 @@
         <img src="img/mobile/hero-welcome-mobile.svg" alt="Добро пожаловать в Седону" width="282" height="214">
       </div>
 
-      <div class="hero__text-wrapper">
+      <div class="hero__text-wrapper hero__text-wrapper--decoration">
         <h1 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="hero__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
@@ -56,7 +55,7 @@
       <h2 class="visually-hidden">Особенности Седоны</h2>
 
       <div class="advantages__list">
-        <div class="advantages__item advantage advantage--detailed advantage--decoration">
+        <div class="advantages__item advantage advantage--detailed">
           <div class="advantage__text-wrapper">
             <h3 class="advantage__title">Настоящий городок</h3>
             <p class="advantage__number">— №1 —</p>
@@ -92,7 +91,7 @@
               </div>
             </div>
 
-            <div class="services__item service service--last">
+            <div class="services__item service">
               <div class="service__image-wrapper">
                 <img src="img/mobile/icon-gift-mobile.svg" alt="Иконка коробки с подарками" width="40" height="40">
               </div>
@@ -148,7 +147,7 @@
           Седоне
         </p>
       </div>
-      <a class="search__button button" href="#">Найти гостиницу</a>
+      <a class="search__button" href="#">Найти гостиницу</a>
     </section>
 
     <!-- Карта Седоны -->
@@ -159,8 +158,8 @@
       <a class="hashtag" href="#">#VISITSEDONA</a>
     </div>
 
-    <div class="footer__social">
-      <a class="social" href="#">
+    <div class="footer__social social">
+      <a class="social__link" href="#">
         <span class="visually-hidden">Вконтакте</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#a)">
@@ -176,7 +175,7 @@
         </svg>
       </a>
 
-      <a class="social" href="#">
+      <a class="social__link" href="#">
         <span class="visually-hidden">Телеграм</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -185,7 +184,7 @@
         </svg>
       </a>
 
-      <a class="social" href="#">
+      <a class="social__link" href="#">
         <span class="visually-hidden">Youtube</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

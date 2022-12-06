@@ -1,9 +1,12 @@
 .header {
-  position: relative;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__logo {
-  .absolute-center();
   .size(185px, 96px);
-  margin: 0 auto;
+  position: static;
+  align-self: center;
+  z-index: 1;
 }

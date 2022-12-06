@@ -3,22 +3,54 @@
 }
 
 .hero__image-wrapper {
+  position: relative;
   padding: 90px 20px 85px;
-  background: url("../img/mobile/hero-triangle-mobile.svg") no-repeat bottom, @light-blue url("../img/mobile/hero-bg-mobile.jpg") no-repeat 0 0 / 100%;
+  background-color: @light-blue;
+  background-image: url("../img/mobile/hero-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--small {
-    background: url("../img/mobile/hero-triangle-mobile.svg") no-repeat bottom, @light-blue url("../img/mobile/hero-bg-mobile.jpg") no-repeat 0 100% / 100%;
+    padding: 50px 20px 65px;
+    background-color: @light-blue;
+    background-image: url("../img/mobile/hero-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/mobile/hero-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 }
 
-.hero__image-wrapper img {
-  display: block;
-  margin: 0 auto;
-}
-
 .hero__text-wrapper {
+  position: relative;
   padding: 35px 20px;
   text-transform: uppercase;
+
+  &--decoration::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background-color: @light-blue;
+    background-image: url("../img/mobile/decorative-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
 }
 
 .hero__title {
