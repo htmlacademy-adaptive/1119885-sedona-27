@@ -1,0 +1,68 @@
+// центрирование элементов
+.elements-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Размер текста
+.text-size(@font-size, @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+// Размер
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+// Кнопка навигации
+.menu-button-style() {
+  .size(56px, 56px);
+  background-color: @white;
+  background-image: url("../img/mobile/icon-menu-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 17px 20px;
+  cursor: pointer;
+}
+
+// Ссылка навигации
+.navigation-link-style() {
+  display: block;
+  padding: 17px 20px 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: @white;
+  background-color: @light-blue;
+}
+
+// Поле для ввода
+.input-style() {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 16px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+
+  &::placeholder {
+    color: fade(@black, 30%);
+  }
+}
+
+// Кнопка
+.button-style() {
+  display: block;
+  font-family: inherit;
+  .text-size(21px, 26px);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: @white;
+  background-color: @light-blue;
+  border: none;
+  padding: 16px 0;
+}
