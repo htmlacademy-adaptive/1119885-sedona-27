@@ -1,11 +1,6 @@
 .card {
+  position: relative;
   padding: 25px 20px;
-  .text-size(14px, 21px);
-}
-
-.card__text-wrapper {
-  width: 280px;
-  margin: 0 auto;
 }
 
 .card__image-link {
@@ -13,19 +8,78 @@
   margin-bottom: 15px;
 }
 
+.card__image-link img {
+  object-fit: fill;
+}
+
 .card__title {
   margin: 0;
   margin-bottom: 15px;
   text-transform: uppercase;
+  .text-size(14px, 21px);
 }
 
 .card__author {
   margin: 0;
   margin-bottom: 15px;
   color: @dark-gray;
+  .text-size(14px, 21px);
 }
 
 .card__likes {
   font-weight: 700;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    padding: 0;
+  }
+
+  .card__image-link {
+    margin: 0;
+  }
+
+  .card__image-link img {
+    height: 400px;
+  }
+
+  .card__text-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+
+  .card__title {
+    margin: 0;
+  }
+
+  .card__author {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__text-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: fade(@black, 30%);
+    color: @white;
+  }
+
+  .card__text-wrapper .card__likes,
+  .card__text-wrapper .card__author {
+    color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1199px) {
+  .card:nth-child(2n):not(:first-child) .card__text-wrapper {
+    background-color: #eaeaea;
+  }
 }

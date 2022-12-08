@@ -1,0 +1,18 @@
+@media (min-width: @tablet-width) {
+  .gallery-photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 60px 29px;
+  }
+
+  .gallery-photo__card--full-screen {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery-photo {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0 29px;
+  }
+}
