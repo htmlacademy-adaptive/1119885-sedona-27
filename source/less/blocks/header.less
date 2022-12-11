@@ -6,7 +6,11 @@
 
 .header__logo {
   .size(185px, 96px);
-  position: static;
   align-self: center;
+  position: absolute;
   z-index: 1;
+}
+
+.header--no-js .header__logo {
+  position: static;
 }

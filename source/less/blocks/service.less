@@ -1,4 +1,5 @@
 .service {
+  position: relative;
   text-transform: uppercase;
   margin-bottom: 25px;
 
@@ -30,4 +31,27 @@
   margin: 0;
   .text-size(14px, 21px);
   color: @dark-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .service__text-wrapper {
+    margin-top: 150px;
+    text-align: center;
+    padding: 0 33px;
+  }
+
+  .service__image-wrapper {
+    top: 60px;
+    left: 50%;
+    margin-left: -40px;
+  }
+
+  .service__image-wrapper img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .service__title {
+    margin-bottom: 22px;
+  }
 }

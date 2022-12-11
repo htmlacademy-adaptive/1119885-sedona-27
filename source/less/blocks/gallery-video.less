@@ -4,8 +4,10 @@
 }
 
 .gallery-video__text-wrapper {
+  margin: 0 auto;
   margin-bottom: 38px;
   text-transform: uppercase;
+  max-width: 445px;
 }
 
 .gallery-video__title {
@@ -18,4 +20,16 @@
   margin: 0;
   .text-size(16px, 24px);
   color: @dark-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery-video {
+    padding: 29px 60px 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery-video {
+    padding: 29px 60px 84px;
+  }
 }

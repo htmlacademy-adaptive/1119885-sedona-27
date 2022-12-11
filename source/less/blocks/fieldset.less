@@ -1,7 +1,8 @@
 .fieldset {
   border: none;
   margin: 0;
-  padding: 0 20px 35px;
+  padding: 0;
+  padding-bottom: 35px;
 }
 
 .fieldset__title {
@@ -16,6 +17,7 @@
 
 .fieldset__text-input {
   margin-bottom: 16px;
+  max-width: 430px;
 
   &:last-child {
     margin-bottom: 0;
@@ -35,5 +37,74 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset--full-screen {
+    grid-column: 1 / -1;
+  }
+
+  .fieldset--text-input:nth-child(2n) {
+    padding-left: 43px;
+  }
+
+  .fieldset--text-input:nth-child(2n - 1) {
+    padding-right: 43px;
+  }
+
+  .fieldset--radio {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 280px 280px;
+    row-gap: 36px;
+    padding: 0 36px 58px;
+  }
+
+  .fieldset--checkbox {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 224px 224px;
+    row-gap: 36px;
+    padding: 0 84px 52px;
+  }
+
+  .fieldset__checkbox-input,
+  .fieldset__radio-input {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset--text-input:nth-child(2n) {
+    padding-left: 63px;
+  }
+
+  .fieldset--text-input:nth-child(2n - 1) {
+    padding-right: 63px;
+  }
+
+  .fieldset--text-input:nth-child(2n) .fieldset__text-input {
+    margin-left: auto;
+  }
+
+  .fieldset--radio {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 53px 73px;
+  }
+
+  .fieldset--checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px 87px;
+  }
+
+  .fieldset__title {
+    margin-bottom: 50px;
+  }
+
+  .fieldset--textarea .fieldset__title {
+    margin-bottom: 28px;
   }
 }
