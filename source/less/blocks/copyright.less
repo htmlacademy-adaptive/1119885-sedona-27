@@ -5,4 +5,22 @@
 .copyright__link {
   .elements-center();
   color: @black;
+
+  &:hover,
+  &:focus {
+    color: @light-blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: @light-blue;
+}
+
+.copyright__link:active svg {
+  fill: #b3b3b3;
 }

@@ -3,4 +3,17 @@
   .size(48px, 48px);
   background-color: @light-blue;
   .elements-center();
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }
