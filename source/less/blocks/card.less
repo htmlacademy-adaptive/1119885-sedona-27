@@ -1,50 +1,14 @@
 .card {
   position: relative;
   padding: 25px 20px;
-}
 
-.card__image-link {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.card__image-link img {
-  object-fit: fill;
-}
-
-.card__title {
-  margin: 0;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  .text-size(14px, 21px);
-}
-
-.card__author {
-  margin: 0;
-  margin-bottom: 15px;
-  color: @dark-gray;
-  .text-size(14px, 21px);
-}
-
-.card__likes {
-  font-weight: 700;
-  color: @black;
-}
-
-@media (min-width: @tablet-width) {
-  .card {
+  @media (min-width: @tablet-width) {
     padding: 0;
   }
+}
 
-  .card__image-link {
-    margin: 0;
-  }
-
-  .card__image-link img {
-    height: 400px;
-  }
-
-  .card__text-wrapper {
+.card__text-wrapper {
+  @media (min-width: @tablet-width) {
     box-sizing: border-box;
     width: 100%;
     padding: 22px 20px 15px;
@@ -54,32 +18,81 @@
     background-color: #f2f2f2;
   }
 
-  .card__title {
-    margin: 0;
-  }
-
-  .card__author {
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .card__text-wrapper {
+  @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
     left: 0;
     background-color: fade(@black, 30%);
     color: @white;
   }
+}
 
-  .card__text-wrapper .card__likes,
-  .card__text-wrapper .card__author {
+.card__image-link {
+  display: block;
+  width: 100%;
+  height: 280px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    height: 267px;
+    margin: 0;
+  }
+}
+
+.card:first-of-type .card__image-link {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  .text-size(14px, 21px);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.card__author {
+  margin: 0;
+  margin-bottom: 15px;
+  color: @dark-gray;
+  .text-size(14px, 21px);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.card__likes {
+  font-weight: 700;
+  color: @black;
+}
+
+.card__likes svg {
+  fill: fade(@black, 30%);
+
+  @media (min-width: @desktop-width) {
+    fill: @white;
+  }
+}
+
+.card__likes-count {
+  margin-left: 5px;
+}
+
+.card__text-wrapper .card__likes,
+.card__text-wrapper .card__author {
+  @media (min-width: @desktop-width) {
     color: @white;
   }
 }
 
-@media (min-width: @tablet-width) and (max-width: 1199px) {
-  .card:nth-child(2n):not(:first-child) .card__text-wrapper {
+.card:nth-child(2n):not(:first-child) .card__text-wrapper {
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
     background-color: #eaeaea;
   }
 }

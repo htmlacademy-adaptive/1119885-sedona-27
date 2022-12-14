@@ -9,4 +9,38 @@
   .input-style();
   width: 100%;
   .text-size(18px, 26px);
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
+}
+
+.text-input__input-wrapper {
+  display: flex;
+
+  &::after {
+    content: "";
+    min-width: 58px;
+    min-height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &--phone-icon {
+    &::after {
+      background-image: url("../img/phone-icon.svg");
+    }
+  }
+
+  &--mail-icon {
+    &::after {
+      background-image: url("../img/mail-icon.svg");
+    }
+  }
 }

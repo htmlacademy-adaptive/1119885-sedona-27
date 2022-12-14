@@ -1,10 +1,52 @@
 .checkbox-input {
-  position: relative;
   display: block;
   font-weight: 700;
   .text-size(18px, 26px);
 }
 
+.checkbox-input:hover .checkbox-input__text::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox-input:active .checkbox-input__text::before {
+  background-color: #d5d5d5;
+}
+
+.checkbox-input:active .checkbox-input__text::after {
+  opacity: 0.3;
+}
+
 .checkbox-input__text {
-  margin-left: 62px;
+  position: relative;
+  padding-left: 62px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 22px;
+    height: 16px;
+    top: 15px;
+    left: 12px;
+    background-image: url("../img/tick.svg");
+  }
+}
+
+.checkbox-input__input:checked + .checkbox-input__text::after {
+  display: block;
 }

@@ -2,11 +2,19 @@
   text-transform: uppercase;
   text-align: center;
   padding: 40px 20px 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 0;
+  }
 }
 
 .search__text-wrapper {
   margin: 0 auto 30px;
   max-width: 440px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .search__title {
@@ -39,15 +47,5 @@
 
   &:disabled {
     background-color: #e5e5e5;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .search {
-    padding: 60px 0;
-  }
-
-  .search__text-wrapper {
-    margin-bottom: 40px;
   }
 }
