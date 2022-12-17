@@ -1,5 +1,9 @@
 .video {
   position: relative;
+
+  &:focus-within {
+    outline: 2px solid @black;
+  }
 }
 
 .video__play-button {
@@ -14,6 +18,10 @@
   background: transparent url("../img/play-button.svg") no-repeat;
   border: none;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .video__image-wrapper {

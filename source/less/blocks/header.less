@@ -9,8 +9,16 @@
   align-self: center;
   position: absolute;
   z-index: 1;
+
+  &:focus-visible {
+    outline: 2px solid @black;
+  }
 }
 
 .header--no-js .header__logo {
   position: static;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
 }

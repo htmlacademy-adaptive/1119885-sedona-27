@@ -41,6 +41,10 @@
 
 .navigation--no-js .navigation__list {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .navigation__menu-button {
@@ -81,9 +85,13 @@
     box-shadow: none;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #669ec0;
+  }
+
+  &:focus-visible {
+    background-color: #669ec0;
+    outline: none;
   }
 
   &:active {
@@ -106,9 +114,13 @@
       color: #766357;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: @white;
+      color: @light-blue;
+    }
+
+    &:focus-visible {
+      background-color: #f2f2f2;
       color: @light-blue;
     }
 
