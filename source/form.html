@@ -12,7 +12,7 @@
   <div class="page__wrapper">
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+        <img src="img/sedona-logo.svg" alt="Логотип Седона" width="185" height="96">
       </a>
 
       <nav class="header__navigation navigation">
@@ -30,14 +30,16 @@
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero hero--border">
         <div class="hero__image-wrapper hero__image-wrapper--small">
-          <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
+          <div class="hero__image">
+            <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
+          </div>
         </div>
 
         <div class="hero__text-wrapper">
           <h1 class="hero__title hero__title--margin-smaller">Оставьте свой отзыв</h1>
-          <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами
             достопримечательностях</p>
         </div>
       </section>
@@ -51,19 +53,19 @@
 
             <div class="fieldset__text-input text-input">
               <label class="text-input__label" for="name">Имя*:</label>
-              <input class="text-input__input input" type="text" id="name" name="name" value="Пётр"
+              <input class="text-input__input" type="text" id="name" name="name" value="Пётр"
                 placeholder="Введите имя" required>
             </div>
 
             <div class="fieldset__text-input text-input">
               <label class="text-input__label" for="surname">Фамилия*:</label>
-              <input class="text-input__input input" type="text" id="surname" name="surname" value="Пустота"
+              <input class="text-input__input" type="text" id="surname" name="surname" value="Пустота"
                 placeholder="Введите фамилию" required>
             </div>
 
             <div class="fieldset__text-input text-input">
               <label class="text-input__label" for="patronymic">Отчество:</label>
-              <input class="text-input__input input" type="text" id="patronymic" name="patronymic" value="Викторович"
+              <input class="text-input__input" type="text" id="patronymic" name="patronymic" value="Викторович"
                 placeholder="Введите отчество">
             </div>
           </fieldset>
@@ -74,7 +76,7 @@
             <div class="fieldset__text-input text-input">
               <label class="text-input__label">Контактный телефон*:</label>
               <div class="text-input__input-wrapper text-input__input-wrapper--phone-icon">
-                <input class="text-input__input input" type="tel" name="contact-phone" placeholder="Введите телефон"
+                <input class="text-input__input" type="tel" name="contact-phone" placeholder="Введите телефон"
                   required>
               </div>
             </div>
@@ -82,7 +84,7 @@
             <div class="fieldset__text-input text-input">
               <label class="text-input__label">Электронная почта*:</label>
               <div class="text-input__input-wrapper text-input__input-wrapper--mail-icon">
-                <input class="text-input__input input" type="email" name="e-mail" placeholder="Введите e-mail" required>
+                <input class="text-input__input" type="email" name="e-mail" placeholder="Введите e-mail" required>
               </div>
             </div>
           </fieldset>
@@ -91,17 +93,17 @@
             <legend class="fieldset__title">Ваше общее впечатление:</legend>
 
             <label class="fieldset__radio-input radio-input">
-              <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
+              <input class="radio-input__input visually-hidden" type="radio" name="impression" value="positive" checked>
               <span class="radio-input__text">Скорее положительное</span>
             </label>
 
             <label class="fieldset__radio-input radio-input">
-              <input class="visually-hidden" type="radio" name="impression" value="negative">
+              <input class="radio-input__input visually-hidden" type="radio" name="impression" value="negative">
               <span class="radio-input__text">Скорее отрицательное</span>
             </label>
 
             <label class="fieldset__radio-input radio-input">
-              <input class="visually-hidden" type="radio" name="impression" value="neutral">
+              <input class="radio-input__input visually-hidden" type="radio" name="impression" value="neutral">
               <span class="radio-input__text">Затрудняюсь ответить</span>
             </label>
           </fieldset>
@@ -110,22 +112,22 @@
             <legend class="fieldset__title">Посещенные <br> достопримечательности:</legend>
 
             <label class="fieldset__checkbox-input checkbox-input">
-              <input class="visually-hidden" type="checkbox" name="devil-bridge" value="visited" checked>
+              <input class="checkbox-input__input visually-hidden" type="checkbox" name="devil-bridge" value="visited" checked>
               <span class="checkbox-input__text">Мост Дьявола</span>
             </label>
 
             <label class="fieldset__checkbox-input checkbox-input">
-              <input class="visually-hidden" type="checkbox" name="mountain-bell" value="visited" checked>
+              <input class="checkbox-input__input visually-hidden" type="checkbox" name="mountain-bell" value="visited" checked>
               <span class="checkbox-input__text">Гора-Колокол</span>
             </label>
 
             <label class="fieldset__checkbox-input checkbox-input">
-              <input class="visually-hidden" type="checkbox" name="slide-park" value="visited" checked>
+              <input class="checkbox-input__input visually-hidden" type="checkbox" name="slide-park" value="visited" checked>
               <span class="checkbox-input__text">Слайд-Парк</span>
             </label>
 
             <label class="fieldset__checkbox-input checkbox-input">
-              <input class="visually-hidden" type="checkbox" name="red-rocks" value="visited">
+              <input class="checkbox-input__input visually-hidden" type="checkbox" name="red-rocks" value="visited">
               <span class="checkbox-input__text">Красные скалы</span>
             </label>
           </fieldset>

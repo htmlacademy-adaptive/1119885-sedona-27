@@ -1,14 +1,18 @@
-@media (min-width: @tablet-width) {
-  .advantages__list {
+.advantages__list {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .advantages__item--full-row {
+.advantages__item--full-row {
+  @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
   }
+}
 
-  .advantages__services {
+.advantages__services {
+  @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
   }
 }
