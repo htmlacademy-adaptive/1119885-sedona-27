@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -16,16 +20,16 @@
       </a>
 
       <nav class="header__navigation navigation navigation--no-js">
-        <button class="navigation__menu-button" type="button">
-          <span class="visually-hidden">Меню навигации</span>
-        </button>
-
         <div class="navigation__list">
           <a class="navigation__link navigation__link--current">Главная</a>
           <a class="navigation__link" href="gallery.html">Фото и видео</a>
           <a class="navigation__link" href="form.html">Форма отзыва</a>
           <a class="navigation__link" href="#">HTML Academy</a>
         </div>
+
+        <button class="navigation__menu-button" type="button">
+          <span class="visually-hidden">Меню навигации</span>
+        </button>
       </nav>
     </header>
 
@@ -55,8 +59,10 @@
             </div>
             <div class="advantage__image-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
                 <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Город в Седоне"
                   width="320" height="260">
               </picture>
@@ -107,7 +113,12 @@
               <p class="advantage__text">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
             </div>
             <div class="advantage__image-wrapper">
-              <img src="img/mobile/bridge-image-mobile.jpg" alt="Мост Дьявола" width="320" height="260">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола"
+                  width="320" height="260">
+              </picture>
             </div>
           </div>
 

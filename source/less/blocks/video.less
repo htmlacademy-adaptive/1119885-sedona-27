@@ -17,8 +17,12 @@
 }
 
 .video__image-wrapper {
-  width: 100%;
-  max-width: 800px;
-  max-height: 500px;
+  max-width: 280px;
+  max-height: 177px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 648px;
+    max-height: 500px;
+  }
 }

@@ -49,8 +49,14 @@
 
         <article class="gallery-photo__card card gallery-photo__card--full-screen">
           <a class="card__image-link" href="#">
-            <img src="img/mobile/gallery-images/photo-1-mobile.jpg" alt="Просторная пустынная равнина" width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo1-desktop.jpg 1x, img/gallery-photo/photo1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo1-tablet.jpg 1x, img/gallery-photo/photo1-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo1-mobile.jpg" srcset="img/gallery-photo/photo1-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
             <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
           </a>
 
@@ -62,7 +68,7 @@
             <a class="card__likes" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z"/>
+                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" />
               </svg>
               <span class="card__likes-count">1350</span>
             </a>
@@ -71,7 +77,14 @@
 
         <article class="gallery-photo__card card">
           <a class="card__image-link" href="#">
-            <img src="img/mobile/gallery-images/photo-2-mobile.jpg" alt="Необычный кактус" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo2-desktop.jpg 1x, img/gallery-photo/photo2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo2-tablet.jpg 1x, img/gallery-photo/photo2-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo2-mobile.jpg" srcset="img/gallery-photo/photo2-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
             <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
           </a>
           <div class="card__text-wrapper">
@@ -82,7 +95,7 @@
             <a class="card__likes" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z"/>
+                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" />
               </svg>
               <span class="card__likes-count">143</span>
             </a>
@@ -91,8 +104,14 @@
 
         <article class="gallery-photo__card card">
           <a class="card__image-link" href="#">
-            <img src="img/mobile/gallery-images/photo-3-mobile.jpg" alt="Горная северная дорогая" width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo3-desktop.jpg 1x, img/gallery-photo/photo3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo3-tablet.jpg 1x, img/gallery-photo/photo3-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo3-mobile.jpg" srcset="img/gallery-photo/photo3-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
             <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
           </a>
           <div class="card__text-wrapper">
@@ -103,7 +122,7 @@
             <a class="card__likes" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z"/>
+                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" />
               </svg>
               <span class="card__likes-count">96</span>
             </a>
@@ -112,7 +131,14 @@
 
         <article class="gallery-photo__card card">
           <a class="card__image-link" href="#">
-            <img src="img/mobile/gallery-images/photo-4-mobile.jpg" alt="Мост Дьявола" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo4-desktop.jpg 1x, img/gallery-photo/photo4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo4-tablet.jpg 1x, img/gallery-photo/photo4-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo4-mobile.jpg" srcset="img/gallery-photo/photo4-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
             <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
           </a>
           <div class="card__text-wrapper">
@@ -123,7 +149,7 @@
             <a class="card__likes" href="#">
               <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z"/>
+                  d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" />
               </svg>
               <span class="card__likes-count">254</span>
             </a>
@@ -139,7 +165,10 @@
         </div>
         <div class="gallery-video__video video">
           <div class="video__image-wrapper">
-            <img src="img/mobile/video-image-mobile.jpg" alt="Превью для видео">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Превью для видео">
+            </picture>
           </div>
           <button class="video__play-button" type="button">
             <span class="visually-hidden">Нажмите, чтобы воспроизвести видео</span>
