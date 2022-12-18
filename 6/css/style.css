@@ -46,7 +46,7 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 a {
   text-decoration: none;
@@ -133,10 +133,8 @@ a {
 .navigation__menu-button {
   width: 56px;
   height: 56px;
+  position: relative;
   background-color: transparent;
-  background-image: url("../img/icon-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
   padding: 17px 20px;
   cursor: pointer;
@@ -144,6 +142,16 @@ a {
   top: 0;
   right: 0;
   z-index: 2;
+}
+.navigation__menu-button::before {
+  content: "";
+  position: absolute;
+  background-color: #81b3d2;
+  height: 4px;
+  top: 17px;
+  left: 13px;
+  right: 20px;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 .navigation__menu-button:hover {
   opacity: 0.6;
@@ -159,8 +167,22 @@ a {
 .navigation--no-js .navigation__menu-button {
   display: none;
 }
-.navigation__list--opened + .navigation__menu-button {
-  background-image: url("../img/icon-cross.svg");
+.navigation__list--opened + .navigation__menu-button::before,
+.navigation__list--opened + .navigation__menu-button::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 9px;
+  right: 16px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+.navigation__list--opened + .navigation__menu-button::before {
+  transform: rotate(45deg);
+}
+.navigation__list--opened + .navigation__menu-button::after {
+  transform: rotate(-45deg);
 }
 .navigation__link {
   display: block;
@@ -269,10 +291,9 @@ a {
 .hero__image-wrapper--small {
   padding: 50px 45px 65px;
   background-color: #81b3d2;
-  background-image: url("../img/hero-bg-mobile@2x.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/hero-bg-mobile.jpg");
   background-size: auto;
-  background-position: center -450px;
+  background-position: center bottom;
 }
 @media (min-width: 768px) {
   .hero__image-wrapper--small {
@@ -385,29 +406,16 @@ a {
 }
 @media (min-width: 768px) {
   .advantage--detailed .advantage__text-wrapper {
-    width: 33%;
-  }
-}
-@media (min-width: 768px) {
-  .advantage--reversed .advantage__image-wrapper {
-    margin: 0 auto 0 0;
+    width: calc(100% / 3);
   }
 }
 .advantage__image-wrapper {
-  max-width: 320px;
-  max-height: 260px;
+  flex-grow: 1;
   margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .advantage__image-wrapper {
-    max-width: 67%;
-    max-height: 256px;
-    margin: 0 0 0 auto;
-  }
+  height: 100%;
 }
 .advantage__text-wrapper {
   box-sizing: border-box;
-  max-height: 256px;
   padding: 24px 20px;
 }
 @media (min-width: 768px) {
@@ -457,6 +465,22 @@ a {
   padding: 25px 20px 45px;
 }
 @media (min-width: 768px) {
+  .services {
+    padding: 0;
+  }
+}
+.services__item {
+  margin-bottom: 25px;
+}
+.services__item:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .services__item {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
   .services__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -465,10 +489,11 @@ a {
 .service {
   position: relative;
   text-transform: uppercase;
-  margin-bottom: 25px;
 }
-.service:last-child {
-  margin-bottom: 0;
+@media (min-width: 768px) {
+  .service {
+    padding: 0 34px 60px;
+  }
 }
 .service__image-wrapper {
   position: absolute;
@@ -484,15 +509,18 @@ a {
     margin-left: -40px;
   }
 }
+.service__image-wrapper img {
+  object-fit: contain;
+}
 .service__text-wrapper {
   padding-top: 8px;
   padding-left: 45px;
 }
 @media (min-width: 768px) {
   .service__text-wrapper {
-    margin-top: 150px;
+    margin-top: 160px;
     text-align: center;
-    padding: 0 33px;
+    padding: 0;
   }
 }
 .service__title {
@@ -586,10 +614,6 @@ a {
     padding: 0;
     border-bottom: none;
   }
-}
-.card__text-wrapper {
-  width: 280px;
-  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .card__text-wrapper {
@@ -1010,6 +1034,7 @@ a {
 }
 .text-input__input:focus {
   outline: 4px solid #e5e5e5;
+  background-color: #f2f2f2;
 }
 .text-input__input-wrapper {
   display: flex;
@@ -1182,7 +1207,9 @@ a {
 .footer__social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 6px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
