@@ -20,13 +20,22 @@
 // Кнопка навигации
 .menu-button-style() {
   .size(56px, 56px);
+  position: relative;
   background-color: transparent;
-  background-image: url("../img/icon-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
   padding: 17px 20px;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @light-blue;
+    height: 4px;
+    top: 17px;
+    left: 13px;
+    right: 20px;
+    box-shadow: 0 9px 0 0 @light-blue, 0 18px 0 0 @light-blue;
+  }
 }
 
 // Ссылка навигации

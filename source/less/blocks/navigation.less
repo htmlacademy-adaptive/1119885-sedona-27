@@ -72,7 +72,25 @@
 }
 
 .navigation__list--opened + .navigation__menu-button {
-  background-image: url("../img/icon-cross.svg");
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 9px;
+    right: 16px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .navigation__link {

@@ -10,22 +10,22 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="header">
+    <header class="header header--no-js">
       <a class="header__logo" href="index.html">
         <img src="img/sedona-logo.svg" alt="Логотип Седона" width="185" height="96">
       </a>
 
-      <nav class="header__navigation navigation">
-        <button class="navigation__menu-button navigation__menu-button--hidden" type="button">
-          <span class="visually-hidden">Меню навигации</span>
-        </button>
-
+      <nav class="header__navigation navigation navigation--no-js">
         <div class="navigation__list">
           <a class="navigation__link" href="index.html">Главная</a>
           <a class="navigation__link" href="gallery.html">Фото и видео</a>
           <a class="navigation__link navigation__link--current">Форма отзыва</a>
           <a class="navigation__link" href="#">HTML Academy</a>
         </div>
+
+        <button class="navigation__menu-button" type="button">
+          <span class="visually-hidden">Меню навигации</span>
+        </button>
       </nav>
     </header>
 
