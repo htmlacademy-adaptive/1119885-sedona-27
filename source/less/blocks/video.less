@@ -1,9 +1,5 @@
 .video {
   position: relative;
-
-  &:focus-within {
-    outline: 2px solid @black;
-  }
 }
 
 .video__play-button {
@@ -20,17 +16,40 @@
   cursor: pointer;
 
   &:focus {
-    outline: none;
+    outline: 2px solid @black;
   }
 }
 
-.video__image-wrapper {
-  max-width: 280px;
-  max-height: 177px;
+.video video {
+  aspect-ratio: 1.58;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 500px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    max-width: 648px;
-    max-height: 500px;
+  background-color: #e5e5e5;
+  background-image: url("../img/video-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
+  @media (min-width: 321px) {
+    background-image: url("../img/video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: 769px) {
+    background-image: url("../img/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }
