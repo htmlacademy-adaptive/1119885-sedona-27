@@ -2,18 +2,22 @@
   display: block;
   font-weight: 700;
   .text-size(18px, 26px);
+
+  &:hover .checkbox-input__text::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active .checkbox-input__text::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active .checkbox-input__text::after {
+    opacity: 0.3;
+  }
 }
 
-.checkbox-input:hover .checkbox-input__text::before {
+.checkbox-input__input:focus + .checkbox-input__text::before {
   background-color: #e5e5e5;
-}
-
-.checkbox-input:active .checkbox-input__text::before {
-  background-color: #d5d5d5;
-}
-
-.checkbox-input:active .checkbox-input__text::after {
-  opacity: 0.3;
 }
 
 .checkbox-input__text {

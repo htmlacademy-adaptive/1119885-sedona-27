@@ -3,22 +3,6 @@
   position: relative;
 }
 
-.navigation__menu-button {
-  .menu-button-style();
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.navigation--no-js .navigation__menu-button {
-  display: none;
-}
-
 .navigation__list {
   position: absolute;
   left: 0;
@@ -57,6 +41,57 @@
 
 .navigation--no-js .navigation__list {
   display: block;
+  position: static;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.navigation__menu-button {
+  .menu-button-style();
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--no-js .navigation__menu-button {
+  display: none;
+}
+
+.navigation__list--opened + .navigation__menu-button {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 9px;
+    right: 16px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .navigation__link {
@@ -69,9 +104,13 @@
     box-shadow: none;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #669ec0;
+  }
+
+  &:focus-visible {
+    background-color: #669ec0;
+    outline: none;
   }
 
   &:active {
@@ -94,9 +133,13 @@
       color: #766357;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: @white;
+      color: @light-blue;
+    }
+
+    &:focus-visible {
+      background-color: #f2f2f2;
       color: @light-blue;
     }
 

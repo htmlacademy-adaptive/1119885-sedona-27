@@ -2,9 +2,15 @@
   text-transform: uppercase;
   text-align: center;
   background-color: #eeeeee;
+  border-bottom: 1px solid #dbdbdb;
+
+  &:last-child {
+    border-bottom: none;
+  }
 
   &--detailed {
     background-color: @light-blue;
+    border-bottom: none;
 
     @media (min-width: @tablet-width) {
       display: flex;
@@ -17,21 +23,26 @@
       flex-direction: row-reverse;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .advantage--detailed .advantage__text-wrapper {
   @media (min-width: @tablet-width) {
-    width: 34%;
+    width: calc(100% / 3);
   }
 }
 
 .advantage__image-wrapper {
-  max-width: 320px;
-  max-height: 260px;
+  flex-grow: 1;
   margin: 0 auto;
+  height: 260px;
 
   @media (min-width: @tablet-width) {
-    width: 66%;
+    width: calc(100% / 1.5);
+    height: 100%;
   }
 }
 

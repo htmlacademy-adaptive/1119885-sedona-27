@@ -1,12 +1,19 @@
-let header = document.querySelector('.header')
-let nav = document.querySelector('.navigation')
+const header = document.querySelector('.header')
+const nav = document.querySelector('.navigation')
 
 header.classList.remove('header--no-js')
 nav.classList.remove('navigation--no-js')
 
-let navButton = document.querySelector('.navigation__menu-button')
-let navList = document.querySelector('.navigation__list')
+const navButton = document.querySelector('.navigation__menu-button')
+const navList = document.querySelector('.navigation__list')
 
-navButton.addEventListener('click', function() {
-    navList.classList.toggle('navigation__list--opened')
+navButton.addEventListener('click', function () {
+  navList.classList.toggle('navigation__list--opened')
+})
+
+window.addEventListener('click', function (e) {
+  const target = e.target
+  if (!target.closest('.navigation__list') && !target.closest('.navigation__menu-button')) {
+    navList.classList.remove('navigation__list--opened')
+  }
 })
