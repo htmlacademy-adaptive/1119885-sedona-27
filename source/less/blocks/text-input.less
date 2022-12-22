@@ -22,26 +22,13 @@
 
 .text-input__input-wrapper {
   display: flex;
+}
 
-  &::after {
-    content: "";
-    min-width: 58px;
-    min-height: 58px;
-    background-color: #e6e6e6;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-  }
-
-  &--phone-icon {
-    &::after {
-      background-image: url("../img/phone-icon.svg");
-    }
-  }
-
-  &--mail-icon {
-    &::after {
-      background-image: url("../img/mail-icon.svg");
-    }
-  }
+.text-input__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
 }
