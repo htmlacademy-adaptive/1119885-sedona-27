@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1119885-sedona-27/7/">
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper">
+    <header class="header header--no-js">
+      <a class="header__logo" href="index.html">
+        <img src="img/sedona-logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+      </a>
+
+      <nav class="header__navigation navigation navigation--no-js">
+        <div class="navigation__list">
+          <a class="navigation__link" href="index.html">Главная</a>
+          <a class="navigation__link navigation__link--current">Фото и видео</a>
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+          <a class="navigation__link" href="#">HTML Academy</a>
+        </div>
+
+        <button class="navigation__menu-button" type="button">
+          <span class="visually-hidden">Меню навигации</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero hero--border">
+        <div class="hero__image-wrapper hero__image-wrapper--small">
+          <div class="hero__image">
+            <img src="img/mobile/hero-sedona-mobile.svg" alt="Седона" width="230" height="40">
+          </div>
+        </div>
+
+        <div class="hero__text-wrapper">
+          <h1 class="hero__title">Фото и видео</h1>
+          <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
+      </section>
+
+      <section class="gallery-photo">
+        <h2 class="visually-hidden">Фотографии Седоны</h2>
+
+        <article class="gallery-photo__card card gallery-photo__card--full-screen">
+          <a class="card__image-link" href="#">
+            <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/gallery-photo/photo1-desktop.jpg 1x, img/gallery-photo/photo1-desktop@2x.jpg 2x">
+              <source media="(min-width: 321px)"
+                srcset="img/gallery-photo/photo1-tablet.jpg 1x, img/gallery-photo/photo1-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo1-mobile.jpg" srcset="img/gallery-photo/photo1-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
+            <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
+          </a>
+
+          <div class="card__text-wrapper">
+            <div class="card__title-wrapper">
+              <h3 class="card__title">Неродные просторы</h3>
+              <p class="card__author">Автор фото: Борис</p>
+            </div>
+            <a class="card__likes" href="#" aria-label="Поставить лайк">
+              <svg width="23" height="21" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="card__likes-count">1350</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="gallery-photo__card card">
+          <a class="card__image-link" href="#">
+            <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/gallery-photo/photo2-desktop.jpg 1x, img/gallery-photo/photo2-desktop@2x.jpg 2x">
+              <source media="(min-width: 321px)"
+                srcset="img/gallery-photo/photo2-tablet.jpg 1x, img/gallery-photo/photo2-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo2-mobile.jpg" srcset="img/gallery-photo/photo2-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
+            <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
+          </a>
+          <div class="card__text-wrapper">
+            <div class="card__title-wrapper">
+              <h3 class="card__title">Местная растительность</h3>
+              <p class="card__author">Автор фото: Сергей</p>
+            </div>
+            <a class="card__likes" href="#" aria-label="Поставить лайк">
+              <svg width="23" height="21" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="card__likes-count">143</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="gallery-photo__card card">
+          <a class="card__image-link" href="#">
+            <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/gallery-photo/photo3-desktop.jpg 1x, img/gallery-photo/photo3-desktop@2x.jpg 2x">
+              <source media="(min-width: 321px)"
+                srcset="img/gallery-photo/photo3-tablet.jpg 1x, img/gallery-photo/photo3-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo3-mobile.jpg" srcset="img/gallery-photo/photo3-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
+            <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
+          </a>
+          <div class="card__text-wrapper">
+            <div class="card__title-wrapper">
+              <h3 class="card__title">Дорога на север</h3>
+              <p class="card__author">Автор фото: Петр</p>
+            </div>
+            <a class="card__likes" href="#" aria-label="Поставить лайк">
+              <svg width="23" height="21" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="card__likes-count">96</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="gallery-photo__card card">
+          <a class="card__image-link" href="#">
+            <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/gallery-photo/photo4-desktop.jpg 1x, img/gallery-photo/photo4-desktop@2x.jpg 2x">
+              <source media="(min-width: 321px)"
+                srcset="img/gallery-photo/photo4-tablet.jpg 1x, img/gallery-photo/photo4-tablet@2x.jpg 2x">
+              <img src="img/gallery-photo/photo4-mobile.jpg" srcset="img/gallery-photo/photo4-mobile@2x.jpg 2x"
+                alt="Просторная пустынная равнина" width="280" height="280">
+            </picture>
+            <span class="visually-hidden">Открыть полноразмерный вариант фотографии</span>
+          </a>
+          <div class="card__text-wrapper">
+            <div class="card__title-wrapper">
+              <h3 class="card__title">Мост Дьявола</h3>
+              <p class="card__author">Автор фото: Антон</p>
+            </div>
+            <a class="card__likes" href="#" aria-label="Поставить лайк">
+              <svg width="23" height="21" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="card__likes-count">254</span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="gallery-video">
+        <div class="gallery-video__text-wrapper">
+          <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+          <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </div>
+        <div class="gallery-video__video video">
+          <video src="#"></video>
+          <button class="video__play-button" type="button">
+            <span class="visually-hidden">Нажмите, чтобы воспроизвести видео</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__hashtag">
+        <a class="hashtag" href="#">#VISITSEDONA</a>
+      </div>
+
+      <div class="footer__social social">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+          <svg width="24" height="14">
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
+          </svg>
+        </a>
+
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Телеграм</span>
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#telegram-icon"></use>
+          </svg>
+        </a>
+
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Youtube</span>
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#youtube-icon"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
+      </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
