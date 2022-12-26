@@ -38,12 +38,15 @@
 .advantage__image-wrapper {
   flex-grow: 1;
   margin: 0 auto;
-  height: 260px;
+  height: 100%;
 
   @media (min-width: @tablet-width) {
     width: calc(100% / 1.5);
-    height: 100%;
   }
+}
+
+.advantage__image-wrapper img {
+  object-fit: cover;
 }
 
 .advantage__text-wrapper {
@@ -51,7 +54,7 @@
   padding: 24px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 42px 33px;
+    padding: 40px 33px;
   }
 
   @media (min-width: @desktop-width) {
