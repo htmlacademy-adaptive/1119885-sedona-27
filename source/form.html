@@ -31,15 +31,15 @@
 
     <main class="main">
       <section class="hero hero--border">
-        <div class="hero__image-wrapper hero__image-wrapper--small">
+        <div class="hero__image-wrapper">
           <div class="hero__image">
             <img src="img/hero-sedona.svg" alt="Седона" width="230" height="40">
           </div>
         </div>
 
         <div class="hero__text-wrapper">
-          <h1 class="hero__title hero__title--margin-smaller">Оставьте свой отзыв</h1>
-          <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами
+          <h1 class="hero__title">Оставьте свой отзыв</h1>
+          <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также&nbsp;о посещенных вами
             достопримечательностях</p>
         </div>
       </section>
@@ -51,48 +51,53 @@
           <fieldset class="form-review__fieldset fieldset fieldset--text-input">
             <legend class="fieldset__title">Представьтесь:</legend>
 
-            <div class="fieldset__text-input text-input">
-              <label class="text-input__label" for="name">Имя*:</label>
-              <input class="text-input__input" type="text" id="name" name="name" value="Пётр" placeholder="Введите имя"
-                required>
-            </div>
+            <div class="fieldset__wrapper">
+              <div class="fieldset__text-input text-input">
+                <label class="text-input__label" for="name">Имя*:</label>
+                <input class="text-input__input" type="text" id="name" name="name" value="Пётр"
+                  placeholder="Введите имя" required>
+              </div>
 
-            <div class="fieldset__text-input text-input">
-              <label class="text-input__label" for="surname">Фамилия*:</label>
-              <input class="text-input__input" type="text" id="surname" name="surname" value="Пустота"
-                placeholder="Введите фамилию" required>
-            </div>
+              <div class="fieldset__text-input text-input">
+                <label class="text-input__label" for="surname">Фамилия*:</label>
+                <input class="text-input__input" type="text" id="surname" name="surname" value="Пустота"
+                  placeholder="Введите фамилию" required>
+              </div>
 
-            <div class="fieldset__text-input text-input">
-              <label class="text-input__label" for="patronymic">Отчество:</label>
-              <input class="text-input__input" type="text" id="patronymic" name="patronymic" value="Викторович"
-                placeholder="Введите отчество">
+              <div class="fieldset__text-input text-input">
+                <label class="text-input__label" for="patronymic">Отчество:</label>
+                <input class="text-input__input" type="text" id="patronymic" name="patronymic" value="Викторович"
+                  placeholder="Введите отчество">
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="form-review__fieldset fieldset fieldset--text-input">
             <legend class="fieldset__title">Контактная информация:</legend>
 
-            <div class="fieldset__text-input text-input">
-              <label class="text-input__label">Контактный телефон*:</label>
-              <div class="text-input__input-wrapper">
-                <input class="text-input__input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
-                <div class="text-input__icon">
-                  <svg width="18" height="18">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg>
+            <div class="fieldset__wrapper">
+              <div class="fieldset__text-input text-input">
+                <label class="text-input__label">Контактный телефон*:</label>
+                <div class="text-input__input-wrapper">
+                  <input class="text-input__input" type="tel" name="contact-phone" placeholder="Введите телефон"
+                    required>
+                  <div class="text-input__icon">
+                    <svg width="18" height="18">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="fieldset__text-input text-input">
-              <label class="text-input__label">Электронная почта*:</label>
-              <div class="text-input__input-wrapper">
-                <input class="text-input__input" type="email" name="e-mail" placeholder="Введите e-mail" required>
-                <div class="text-input__icon">
-                  <svg width="16" height="12">
-                    <use xlink:href="img/sprite.svg#mail"></use>
-                  </svg>
+              <div class="fieldset__text-input text-input">
+                <label class="text-input__label">Электронная почта*:</label>
+                <div class="text-input__input-wrapper">
+                  <input class="text-input__input" type="email" name="e-mail" placeholder="Введите e-mail" required>
+                  <div class="text-input__icon">
+                    <svg width="16" height="12">
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -135,7 +140,7 @@
             <label class="fieldset__checkbox-input checkbox-input">
               <input class="checkbox-input__input visually-hidden" type="checkbox" name="slide-park" value="visited"
                 checked>
-              <span class="checkbox-input__text">Слайд-Парк</span>
+              <span class="checkbox-input__text">Слайд-парк</span>
             </label>
 
             <label class="fieldset__checkbox-input checkbox-input">
@@ -161,7 +166,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--secondary">
       <div class="footer__hashtag">
         <a class="hashtag" href="#">#VISITSEDONA</a>
       </div>
@@ -192,7 +197,7 @@
       <div class="footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg width="40" height="40">
+          <svg class="copyright__icon" width="40" height="40">
             <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>

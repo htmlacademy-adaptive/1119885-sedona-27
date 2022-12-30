@@ -11,9 +11,9 @@ navButton.addEventListener('click', function () {
   navList.classList.toggle('navigation__list--opened')
 })
 
-window.addEventListener('click', function (e) {
-  const target = e.target
-  if (!target.closest('.navigation__list') && !target.closest('.navigation__menu-button')) {
-    navList.classList.remove('navigation__list--opened')
-  }
-})
+// window.addEventListener('click', function (e) {
+//   const target = e.target
+//   if (!target.closest('.navigation__list') && !target.closest('.navigation__menu-button')) {
+//     navList.classList.remove('navigation__list--opened')
+//   }
+// })

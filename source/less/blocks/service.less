@@ -1,9 +1,15 @@
 .service {
+  box-sizing: border-box;
   position: relative;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding: 0 34px 60px;
+    min-height: 331px;
+    padding: 0 40px 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 50px 70px;
   }
 }
 
@@ -13,11 +19,15 @@
   height: 40px;
 
   @media (min-width: @tablet-width) {
-    top: 60px;
+    top: 57px;
     left: 50%;
     width: 80px;
     height: 80px;
     margin-left: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 64px;
   }
 }
 
@@ -31,9 +41,21 @@
   padding-left: 45px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 160px;
+    margin-top: 154px;
     text-align: center;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 168px;
+  }
+}
+
+.service__text-wrapper br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
@@ -43,7 +65,12 @@
   .text-size(18px, 26px);
 
   @media (min-width: @tablet-width) {
+    .text-size(21px, 26px);
     margin-bottom: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
   }
 }
 

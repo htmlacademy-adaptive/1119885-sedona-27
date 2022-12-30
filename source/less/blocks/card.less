@@ -3,6 +3,12 @@
   padding: 25px 20px;
   border-bottom: 1px solid #e5e5e5;
 
+  &--full-screen {
+    @media (min-width: @tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
     border-bottom: none;
@@ -13,7 +19,7 @@
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     width: 100%;
-    padding: 22px 20px 15px;
+    padding: 21px 20px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +28,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
+    padding: 18px 18px 15px 24px;
     bottom: 0;
     left: 0;
     background-color: fade(@black, 30%);
@@ -29,30 +36,41 @@
   }
 }
 
+.card--full-screen .card__text-wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 21px 18px 17px 20px;
+  }
+}
+
 .card__image-link {
   display: block;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
-.card__title {
-  margin: 0;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  .text-size(14px, 21px);
-
+.card--full-screen .card__title {
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
 }
 
+.card__title {
+  margin: 0;
+  text-transform: uppercase;
+  .text-size(14px, 21px);
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
 .card__author {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   color: @dark-gray;
   .text-size(14px, 21px);
 
@@ -64,6 +82,7 @@
 .card__likes {
   font-weight: 700;
   color: @black;
+  .text-size(14px, 21px);
 }
 
 .card__likes svg {
@@ -75,7 +94,7 @@
 }
 
 .card__likes-count {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .card__text-wrapper .card__likes,

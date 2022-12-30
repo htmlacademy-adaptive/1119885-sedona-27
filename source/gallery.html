@@ -31,13 +31,13 @@
 
     <main class="main">
       <section class="hero hero--border">
-        <div class="hero__image-wrapper hero__image-wrapper--small">
+        <div class="hero__image-wrapper">
           <div class="hero__image">
             <img src="img/hero-sedona.svg" alt="Седона" width="230" height="40">
           </div>
         </div>
 
-        <div class="hero__text-wrapper">
+        <div class="hero__text-wrapper hero__text-wrapper--tertiary">
           <h1 class="hero__title">Фото и видео</h1>
           <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
             политике и экономике.</p>
@@ -47,9 +47,16 @@
       <section class="gallery-photo">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
 
-        <article class="gallery-photo__card card gallery-photo__card--full-screen">
+        <article class="gallery-photo__card card card--full-screen">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo1-desktop.webp 1x, img/gallery-photo/photo1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo1-tablet.webp 1x, img/gallery-photo/photo1-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery-photo/photo1-mobile.webp 1x, img/gallery-photo/photo1-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/gallery-photo/photo1-desktop.jpg 1x, img/gallery-photo/photo1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -77,6 +84,13 @@
         <article class="gallery-photo__card card">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo2-desktop.webp 1x, img/gallery-photo/photo2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo2-tablet.webp 1x, img/gallery-photo/photo2-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery-photo/photo2-mobile.webp 1x, img/gallery-photo/photo2-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/gallery-photo/photo2-desktop.jpg 1x, img/gallery-photo/photo2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -103,6 +117,13 @@
         <article class="gallery-photo__card card">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo3-desktop.webp 1x, img/gallery-photo/photo3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo3-tablet.webp 1x, img/gallery-photo/photo3-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery-photo/photo3-mobile.webp 1x, img/gallery-photo/photo3-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/gallery-photo/photo3-desktop.jpg 1x, img/gallery-photo/photo3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -129,6 +150,13 @@
         <article class="gallery-photo__card card">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-photo/photo4-desktop.webp 1x, img/gallery-photo/photo4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-photo/photo4-tablet.webp 1x, img/gallery-photo/photo4-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/gallery-photo/photo4-mobile.webp 1x, img/gallery-photo/photo4-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/gallery-photo/photo4-desktop.jpg 1x, img/gallery-photo/photo4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -168,7 +196,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--tertiary">
       <div class="footer__hashtag">
         <a class="hashtag" href="#">#VISITSEDONA</a>
       </div>
@@ -199,7 +227,7 @@
       <div class="footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg width="40" height="40">
+          <svg class="copyright__icon" width="40" height="40">
             <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>

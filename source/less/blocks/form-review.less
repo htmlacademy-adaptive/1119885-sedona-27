@@ -1,5 +1,5 @@
 .form-review {
-  padding: 0 0 24px;
+  padding: 0 0 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -13,9 +13,8 @@
 }
 
 .form-review__button-wrapper {
-  margin: 0 auto;
+  margin: 12px auto 0;
   padding: 0 20px;
-  margin-top: 32px;
   max-width: 384px;
   box-sizing: border-box;
   width: 100%;
@@ -27,6 +26,7 @@
     align-items: center;
     max-width: 768px;
     padding: 0;
+    margin-top: 12px;
   }
 }
 
@@ -61,4 +61,8 @@
   .text-size(12px, 21px);
   color: @dark-gray;
   max-width: 384px;
+
+  @media (min-width: @tablet-width) {
+    .text-size(14px, 21px);
+  }
 }

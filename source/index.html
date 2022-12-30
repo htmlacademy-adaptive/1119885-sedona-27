@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -33,16 +33,16 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="page__main">
       <section class="hero hero--decoration">
-        <div class="hero__image-wrapper">
+        <div class="hero__image-wrapper hero__image-wrapper--big">
           <div class="hero__image">
             <img src="img/hero-welcome.svg" alt="Добро пожаловать в Седону" width="282" height="214">
           </div>
         </div>
 
-        <div class="hero__text-wrapper">
-          <h1 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <div class="hero__text-wrapper hero__text-wrapper--secondary">
+          <h1 class="hero__title hero__title--small">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</h1>
           <p class="hero__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </section>
@@ -53,12 +53,17 @@
         <div class="advantages__list">
           <div class="advantages__item advantage advantage--detailed advantages__item--full-row">
             <div class="advantage__text-wrapper">
-              <h3 class="advantage__title">Настоящий городок</h3>
+              <h3 class="advantage__title">Настоящий&nbsp;<br>городок</h3>
               <p class="advantage__number">— №1 —</p>
               <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantage__image-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -94,7 +99,7 @@
                 </div>
                 <div class="service__text-wrapper">
                   <h4 class="service__title">Еда</h4>
-                  <p class="service__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="service__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
                 </div>
               </div>
 
@@ -107,7 +112,7 @@
                 </div>
                 <div class="service__text-wrapper">
                   <h4 class="service__title">Сувениры</h4>
-                  <p class="service__text">Не только китайского, но и местного производства!</p>
+                  <p class="service__text">Не только китайского,&nbsp;<br>но и местного производства!</p>
                 </div>
               </div>
             </div>
@@ -115,20 +120,19 @@
 
           <div class="advantages__item advantage advantage--detailed advantages__item--full-row advantage--reversed">
             <div class="advantage__text-wrapper">
-              <h3 class="advantage__title">Там есть мост дьявола</h3>
+              <h3 class="advantage__title">Там есть&nbsp;<br>мост дьявола</h3>
               <p class="advantage__number">— №2 —</p>
-              <p class="advantage__text">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
+              <p class="advantage__text">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
             </div>
             <div class="advantage__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop2x.webp 2x">
+                  srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-
                 <source media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop2x.jpg 2x">
+                  srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                 <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола"
@@ -139,7 +143,7 @@
 
           <div class="advantages__item advantage">
             <div class="advantage__text-wrapper">
-              <h3 class="advantage__title">Небольшая площадь</h3>
+              <h3 class="advantage__title">Небольшая&nbsp;<br>площадь</h3>
               <p class="advantage__number">— №3 —</p>
               <p class="advantage__text">Все интересные места находятся очень близко</p>
             </div>
@@ -147,17 +151,17 @@
 
           <div class="advantages__item advantage">
             <div class="advantage__text-wrapper">
-              <h3 class="advantage__title">Красивая дорога</h3>
+              <h3 class="advantage__title">Красивая&nbsp;<br>дорога</h3>
               <p class="advantage__number">— №4 —</p>
-              <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем&nbsp;<br>не скучно!</p>
             </div>
           </div>
 
           <div class="advantages__item advantage">
             <div class="advantage__text-wrapper">
-              <h3 class="advantage__title">Мало туристов</h3>
+              <h3 class="advantage__title">Мало&nbsp;<br>туристов</h3>
               <p class="advantage__number">— №5 —</p>
-              <p class="advantage__text">Большинство едет в Гранд&nbsp;Каньон и&nbsp;толпится там</p>
+              <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </div>
         </div>
@@ -166,7 +170,7 @@
       <section class="search">
         <div class="search__text-wrapper">
           <h2 class="search__title">Заинтересовались?</h2>
-          <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          <p class="search__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в
             Седоне
           </p>
         </div>
@@ -212,7 +216,7 @@
       <div class="footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg width="40" height="40">
+          <svg class="copyright__icon" width="40" height="40">
             <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>
