@@ -50,6 +50,10 @@
   background-image: url("../img/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
 
+  @supports (background: url("../img/hero-bg-mobile.webp")) {
+    background-image: url("../img/hero-bg-mobile.webp");
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -67,14 +71,26 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-bg-mobile@2x.jpg");
+
+    @supports (background: url("../img/hero-bg-mobile@2x.webp")) {
+      background-image: url("../img/hero-bg-mobile@2x.webp");
+    }
   }
 
   @media (min-width: @tablet-width) {
     padding: 94px 20px 118px;
     background-image: url("../img/hero-bg-tablet.jpg");
 
+    @supports (background: url("../img/hero-bg-tablet.webp")) {
+      background-image: url("../img/hero-bg-tablet.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-bg-tablet@2x.jpg");
+
+      @supports (background: url("../img/hero-bg-tablet@2x.webp")) {
+        background-image: url("../img/hero-bg-tablet@2x.webp");
+      }
     }
   }
 
@@ -98,27 +114,27 @@
   box-sizing: border-box;
   max-width: 500px;
   margin: 0 auto;
-  padding: 36px 18px 28px;
+  padding: 32px 18px 51px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding: 64px 20px 80px;
+    padding: 48px 0 55px;
     background-position: center bottom;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 113px 0 43px;
+    padding: 60px 0 44px;
   }
 
   &--secondary {
-    padding: 32px 18px 51px;
+    padding: 36px 18px 28px;
 
     @media (min-width: @tablet-width) {
-      padding: 48px 0 55px;
+      padding: 64px 20px 80px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 60px 0 44px;
+      padding: 113px 0 43px;
     }
   }
 
