@@ -13,17 +13,16 @@
     border-bottom: none;
   }
 
+  &--full-row {
+    @media (min-width: @tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+
   &--reversed {
     @media (min-width: @tablet-width) {
       flex-direction: row-reverse;
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    min-height: 256px;
-    border-bottom: none;
-    display: flex;
-    align-items: center;
   }
 }
 
