@@ -27,12 +27,12 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: @light-blue;
+    background-color: @accent-color;
     height: 4px;
     top: 17px;
     left: 13px;
     right: 20px;
-    box-shadow: 0 9px 0 0 @light-blue, 0 18px 0 0 @light-blue;
+    box-shadow: 0 9px 0 0 @accent-color, 0 18px 0 0 @accent-color;
   }
 }
 
@@ -43,8 +43,8 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  color: @white;
-  background-color: @light-blue;
+  color: @main-color;
+  background-color: @accent-color;
 }
 
 // Поле для ввода
@@ -55,7 +55,7 @@
   padding: 16px;
   box-sizing: border-box;
   border: none;
-  background-color: #f2f2f2;
+  background-color: @secondary-color;
 
   &::placeholder {
     color: fade(@black, 30%);
@@ -70,8 +70,8 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  color: @white;
-  background-color: @light-blue;
+  color: @main-color;
+  background-color: @accent-color;
   border: none;
   padding: 16px 0;
   cursor: pointer;

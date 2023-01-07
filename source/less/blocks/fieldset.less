@@ -1,8 +1,13 @@
 .fieldset {
   border: none;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid @tertiary-color;
   margin: 0;
   padding: 0 20px 37px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
 
   &--full-screen {
     @media (min-width: @tablet-width) {
@@ -14,6 +19,7 @@
     @media (min-width: @tablet-width) {
       padding: 0;
       padding-bottom: 13px;
+      border: none;
     }
   }
 
@@ -83,14 +89,6 @@
 
   &:last-of-type {
     border-bottom: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    border-bottom: none;
-
-    &:not(&--text-input) {
-      border-top: 1px solid #dbdbdb;
-    }
   }
 }
 

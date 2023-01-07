@@ -42,11 +42,11 @@
 
   &:active {
     background-color: #5496bd;
-    color: fade(@white, 30%);
+    color: fade(@main-color, 30%);
   }
 
   &:disabled {
-    background-color: #e5e5e5;
+    background-color: @tertiary-color;
   }
 
   @media (min-width: @tablet-width) {
@@ -59,7 +59,7 @@
   text-align: right;
   margin: 0;
   .text-size(12px, 21px);
-  color: @dark-gray;
+  color: @text-color;
   max-width: 384px;
 
   @media (min-width: @tablet-width) {

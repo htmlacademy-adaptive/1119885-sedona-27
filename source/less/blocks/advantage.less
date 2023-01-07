@@ -2,14 +2,14 @@
   text-transform: uppercase;
   text-align: center;
   background-color: #eeeeee;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #d6d6d6;
 
   &:last-child {
-    border-bottom: none;
+    border: none;
   }
 
   &--detailed {
-    background-color: @light-blue;
+    background-color: @accent-color;
     border-bottom: none;
   }
 
@@ -23,6 +23,10 @@
     @media (min-width: @tablet-width) {
       flex-direction: row-reverse;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
 
@@ -95,7 +99,7 @@
 .advantage__text,
 .advantage__number {
   margin: 0;
-  color: @dark-gray;
+  color: @text-color;
   .text-size(14px, 21px);
 }
 
@@ -110,5 +114,5 @@
 .advantage--detailed .advantage__title,
 .advantage--detailed .advantage__number,
 .advantage--detailed .advantage__text {
-  color: @white;
+  color: @main-color;
 }

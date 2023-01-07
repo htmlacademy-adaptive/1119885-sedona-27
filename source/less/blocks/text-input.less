@@ -1,5 +1,5 @@
 .text-input__label {
-  color: @dark-gray;
+  color: @text-color;
   padding-left: 16px;
   .text-size(14px, 21px);
   text-transform: uppercase;
@@ -11,13 +11,13 @@
   .text-size(18px, 26px);
 
   &:hover {
-    background-color: #e5e5e5;
+    background-color: @tertiary-color;
   }
 
   &:focus {
     outline: none;
-    box-shadow: inset 0 0 0 4px #e5e5e5;
-    background-color: #f2f2f2;
+    box-shadow: inset 0 0 0 4px @tertiary-color;
+    background-color: @secondary-color;
   }
 
   &--error {
@@ -40,9 +40,7 @@
 }
 
 .text-input__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .elements-center();
   min-width: 58px;
   height: 58px;
   background-color: #e6e6e6;
