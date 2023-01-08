@@ -6,9 +6,19 @@
 }
 
 .text-input__input {
-  .input-style();
+  display: block;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 16px;
+  box-sizing: border-box;
+  border: none;
+  background-color: @secondary-color;
   width: 100%;
   .text-size(18px, 26px);
+
+  &::placeholder {
+    color: fade(@black, 30%);
+  }
 
   &:hover {
     background-color: @tertiary-color;
