@@ -1,6 +1,14 @@
 .navigation {
   .text-size(18px, 26px);
   position: relative;
+
+  &--no-js {
+    margin-bottom: 56px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .navigation__list {
