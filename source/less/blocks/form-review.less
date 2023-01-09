@@ -59,10 +59,11 @@
   text-align: right;
   margin: 0;
   .text-size(12px, 21px);
-  color: @text-color;
+  color: fade(@text-color, 60%);
   max-width: 384px;
 
   @media (min-width: @tablet-width) {
+    color: @text-color;
     .text-size(14px, 21px);
   }
 }
