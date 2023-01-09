@@ -17,8 +17,7 @@
 
   &--text-input {
     @media (min-width: @tablet-width) {
-      padding: 0;
-      padding-bottom: 13px;
+      padding: 0 0 13px;
       border: none;
     }
   }
@@ -57,7 +56,7 @@
 
     @media (min-width: @desktop-width) {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       padding: 0 53px 73px;
     }
   }
@@ -69,13 +68,13 @@
       display: grid;
       justify-content: space-between;
       grid-template-columns: 224px 224px;
-      row-gap: 17px;
+      row-gap: 16px;
       padding: 0 84px 42px;
     }
 
     @media (min-width: @desktop-width) {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       padding: 0 45px 87px;
     }
   }
@@ -147,8 +146,7 @@
   text-align: center;
   font-weight: 700;
   .text-size(18px, 26px);
-  padding: 0;
-  padding-top: 24px;
+  padding: 24px 0 0;
   margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
@@ -186,10 +184,14 @@
   margin-bottom: 17px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    &:not(:nth-of-type(4)) {
+      margin-right: 12px;
+    }
+
   }
 }
