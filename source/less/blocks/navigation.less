@@ -1,15 +1,20 @@
 .navigation {
   .text-size(18px, 26px);
   position: relative;
+
+  &--no-js {
+    margin-bottom: 56px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .navigation__list {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: none;
   z-index: 1;
 
@@ -30,7 +35,6 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     z-index: 0;
 
     &::before {
@@ -49,11 +53,24 @@
 }
 
 .navigation__menu-button {
-  .menu-button-style();
+  .size(56px, 56px);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   position: absolute;
-  top: 0;
   right: 0;
   z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @accent-color;
+    height: 4px;
+    top: 17px;
+    left: 13px;
+    right: 20px;
+    box-shadow: 0 9px 0 0 @accent-color, 0 18px 0 0 @accent-color;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -81,7 +98,7 @@
     left: 9px;
     right: 16px;
     height: 4px;
-    background-color: #ffffff;
+    background-color: @main-color;
     box-shadow: none;
   }
 
@@ -95,7 +112,13 @@
 }
 
 .navigation__link {
-  .navigation-link-style();
+  display: block;
+  padding: 17px 20px 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: @main-color;
+  background-color: @accent-color;
   box-sizing: border-box;
   min-height: 56px;
   box-shadow: inset 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
@@ -115,13 +138,14 @@
 
   &:active {
     background-color: #5496bd;
-    color: fade(@white, 30%);
+    color: fade(@main-color, 30%);
   }
 
   @media (min-width: @tablet-width) {
+    padding: 20px 20px 12px;
     .text-size(14px, 21px);
     color: @black;
-    background-color: @white;
+    background-color: @main-color;
     box-shadow: none;
     width: 20%;
 
@@ -134,17 +158,17 @@
     }
 
     &:hover {
-      background-color: @white;
-      color: @light-blue;
+      background-color: @main-color;
+      color: @accent-color;
     }
 
     &:focus-visible {
-      background-color: #f2f2f2;
-      color: @light-blue;
+      background-color: @secondary-color;
+      color: @accent-color;
     }
 
     &:active {
-      background-color: @white;
+      background-color: @main-color;
       color: #b3b3b3;
     }
   }

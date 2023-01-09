@@ -4,7 +4,7 @@
   .text-size(18px, 26px);
 
   &:hover .checkbox-input__text::before {
-    background-color: #e5e5e5;
+    background-color: @tertiary-color;
   }
 
   &:active .checkbox-input__text::before {
@@ -17,7 +17,7 @@
 }
 
 .checkbox-input__input:focus + .checkbox-input__text::before {
-  background-color: #e5e5e5;
+  background-color: @tertiary-color;
 }
 
 .checkbox-input__text {
@@ -36,7 +36,7 @@
     width: 46px;
     height: 46px;
     border-radius: 4px;
-    background-color: #f2f2f2;
+    background-color: @secondary-color;
   }
 
   &::after {

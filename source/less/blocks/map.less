@@ -1,4 +1,53 @@
+.map {
+  .elements-center();
+  position: relative;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: @main-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: @accent-color;
+  }
+
+  @supports (background: url("../img/map-mobile.webp")) {
+    background-image: url("../img/map-mobile.webp");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet.png");
+
+    @supports (background: url("../img/map-tablet.webp")) {
+      background-image: url("../img/map-tablet.webp");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map-desktop.png");
+
+    @supports (background: url("../img/map-desktop.webp")) {
+      background-image: url("../img/map-desktop.webp");
+    }
+  }
+}
+
 .map iframe {
   width: 100%;
   height: 350px;
+  position: relative;
+  z-index: 1;
 }

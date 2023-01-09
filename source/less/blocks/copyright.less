@@ -1,4 +1,5 @@
 .copyright {
+  .text-size(14px, 21px);
   text-transform: uppercase;
 }
 
@@ -8,10 +9,17 @@
 
   &:hover,
   &:focus {
-    color: @light-blue;
+    color: @accent-color;
   }
 
   &:active {
     color: #b3b3b3;
   }
+}
+
+.copyright__icon {
+  position: relative;
+  left: 7px;
+  min-width: 40px;
+  min-height: 40px;
 }

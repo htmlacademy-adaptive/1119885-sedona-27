@@ -17,63 +17,18 @@
   height: @height;
 }
 
-// Кнопка навигации
-.menu-button-style() {
-  .size(56px, 56px);
-  position: relative;
-  background-color: transparent;
-  border: none;
-  padding: 17px 20px;
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: @light-blue;
-    height: 4px;
-    top: 17px;
-    left: 13px;
-    right: 20px;
-    box-shadow: 0 9px 0 0 @light-blue, 0 18px 0 0 @light-blue;
-  }
-}
-
-// Ссылка навигации
-.navigation-link-style() {
-  display: block;
-  padding: 17px 20px 12px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  color: @white;
-  background-color: @light-blue;
-}
-
-// Поле для ввода
-.input-style() {
-  display: block;
-  font-family: inherit;
-  font-weight: 700;
-  padding: 16px;
-  box-sizing: border-box;
-  border: none;
-  background-color: #f2f2f2;
-
-  &::placeholder {
-    color: fade(@black, 30%);
-  }
-}
-
 // Кнопка
 .button-style() {
+  box-sizing: border-box;
   display: block;
   font-family: inherit;
   .text-size(21px, 26px);
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
-  color: @white;
-  background-color: @light-blue;
+  color: @main-color;
+  background-color: @accent-color;
   border: none;
-  padding: 16px 0;
+  padding: 16px;
   cursor: pointer;
 }

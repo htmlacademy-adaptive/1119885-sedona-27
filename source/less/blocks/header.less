@@ -1,11 +1,15 @@
 .header {
+  position: relative;
   min-height: 56px;
   display: flex;
   flex-direction: column;
+
+  &--no-js {
+    flex-direction: column-reverse;
+  }
 }
 
 .header__logo {
-  .size(185px, 96px);
   align-self: center;
   position: absolute;
   z-index: 1;
@@ -16,9 +20,5 @@
 }
 
 .header--no-js .header__logo {
-  position: static;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-  }
+  bottom: -40px;
 }

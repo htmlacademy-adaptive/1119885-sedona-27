@@ -2,19 +2,20 @@
   text-transform: uppercase;
   text-align: center;
   background-color: #eeeeee;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #d6d6d6;
 
   &:last-child {
-    border-bottom: none;
+    border: none;
   }
 
   &--detailed {
-    background-color: @light-blue;
+    background-color: @accent-color;
     border-bottom: none;
+  }
 
+  &--full-row {
     @media (min-width: @tablet-width) {
-      display: flex;
-      align-items: center;
+      grid-column: 1 / -1;
     }
   }
 
@@ -25,22 +26,22 @@
   }
 
   @media (min-width: @tablet-width) {
-    border-bottom: none;
+    border: none;
   }
 }
 
-.advantage--detailed .advantage__text-wrapper {
-  @media (min-width: @tablet-width) {
-    width: calc(100% / 3);
+.advantage--detailed:nth-of-type(2) .advantage__text {
+  @media (min-width: @desktop-width) {
+    padding: 0 30px;
   }
 }
 
 .advantage__image-wrapper {
-  flex-grow: 1;
   margin: 0 auto;
   height: 100%;
 
   @media (min-width: @tablet-width) {
+    flex-grow: 1;
     width: calc(100% / 1.5);
   }
 }
@@ -51,24 +52,46 @@
 
 .advantage__text-wrapper {
   box-sizing: border-box;
-  padding: 24px 20px;
+  word-wrap: break-word;
+  padding: 24px 32px;
 
   @media (min-width: @tablet-width) {
     padding: 40px 33px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 50px;
+    padding: 55px 50px;
+  }
+}
+
+.advantage__text-wrapper br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.advantage--detailed .advantage__text-wrapper {
+  padding: 36px 20px 38px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 30px 30px;
+    width: calc(100% / 3);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 55px;
   }
 }
 
 .advantage__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   .text-size(18px, 26px);
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     .text-size(21px, 26px);
   }
 }
@@ -76,20 +99,20 @@
 .advantage__text,
 .advantage__number {
   margin: 0;
-  color: @dark-gray;
+  color: @text-color;
   .text-size(14px, 21px);
 }
 
 .advantage__number {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
 .advantage--detailed .advantage__title,
 .advantage--detailed .advantage__number,
 .advantage--detailed .advantage__text {
-  color: @white;
+  color: @main-color;
 }

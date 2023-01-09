@@ -1,9 +1,13 @@
 .fieldset {
   border: none;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid @tertiary-color;
   margin: 0;
-  padding: 0 20px;
-  padding-bottom: 39px;
+  padding: 0 20px 37px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
 
   &--full-screen {
     @media (min-width: @tablet-width) {
@@ -11,43 +15,44 @@
     }
   }
 
+  &--text-input {
+    @media (min-width: @tablet-width) {
+      padding: 0;
+      padding-bottom: 13px;
+      border: none;
+    }
+  }
+
   &--text-input:nth-child(2n) {
     @media (min-width: @tablet-width) {
-      padding-left: 43px;
       border-left: 1px solid #dbdbdb;
       margin-bottom: 48px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 63px;
-    }
-  }
-
-  &--text-input {
-    @media (min-width: @tablet-width) {
-      padding: 0;
-      padding-bottom: 13px;
+      margin-bottom: 56px;
     }
   }
 
   &--text-input:nth-child(2n - 1) {
     @media (min-width: @tablet-width) {
-      padding-right: 43px;
       margin-bottom: 48px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-right: 63px;
+      margin-bottom: 56px;
     }
   }
 
   &--radio {
+    padding: 0 20px 23px;
+
     @media (min-width: @tablet-width) {
       display: grid;
       justify-content: space-between;
       grid-template-columns: 280px 280px;
-      row-gap: 36px;
-      padding: 0 36px 58px;
+      row-gap: 16px;
+      padding: 0 36px 48px;
     }
 
     @media (min-width: @desktop-width) {
@@ -58,12 +63,14 @@
   }
 
   &--checkbox {
+    padding: 0 20px 23px;
+
     @media (min-width: @tablet-width) {
       display: grid;
       justify-content: space-between;
       grid-template-columns: 224px 224px;
-      row-gap: 36px;
-      padding: 0 84px 52px;
+      row-gap: 17px;
+      padding: 0 84px 42px;
     }
 
     @media (min-width: @desktop-width) {
@@ -83,19 +90,49 @@
   &:last-of-type {
     border-bottom: none;
   }
+}
 
+.fieldset--text-input:nth-child(2n) .fieldset__wrapper {
   @media (min-width: @tablet-width) {
-    border-bottom: none;
+    padding-left: 43px;
+  }
 
-    &:not(&--text-input) {
-      border-top: 1px solid #dbdbdb;
-    }
+  @media (min-width: @desktop-width) {
+    padding-left: 63px;
+  }
+}
+
+.fieldset--text-input:nth-child(2n - 1) .fieldset__wrapper {
+  @media (min-width: @tablet-width) {
+    padding-right: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 63px;
+  }
+}
+
+.fieldset--text-input:nth-child(2n - 1) .fieldset__text-input {
+  @media (min-width: @desktop-width) {
+    min-width: 430px;
   }
 }
 
 .fieldset--full-screen .fieldset__title {
   @media (min-width: @tablet-width) {
     padding: 0 70px;
+  }
+}
+
+.fieldset--radio .fieldset__title {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.fieldset--checkbox .fieldset__title {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
   }
 }
 
@@ -110,11 +147,17 @@
   text-align: center;
   font-weight: 700;
   .text-size(18px, 26px);
+  padding: 0;
   padding-top: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    .text-size(21px, 26px);
+    margin-bottom: 28px;
+  }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 28px;
   }
 }
 
@@ -128,7 +171,7 @@
 }
 
 .fieldset__radio-input {
-  margin-bottom: 36px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -140,7 +183,7 @@
 }
 
 .fieldset__checkbox-input {
-  margin-bottom: 36px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
