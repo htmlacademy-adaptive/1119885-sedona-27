@@ -10,20 +10,14 @@ formButton.addEventListener('click', (e) => {
   e.preventDefault()
   page.style.cssText = 'overflow: hidden;'
   for (let i = 0; i < input.length; i++) {
-    if(input[i].hasAttribute('required') && input[i].value == '') {
-      input[i].classList.add('text-input__input--error')
+    if(input[i].hasAttribute('required') && input[i].value === '') {
       modalError.classList.remove('modal--hidden')
-    } else if (i == input.length - 1) {
+      break;
+    } else if (i === input.length - 1) {
       modalSuccess.classList.remove('modal--hidden')
     }
   }
 })
-
-for (let i = 0; i < input.length; i++) {
-  input[i].addEventListener('click', () => {
-    input[i].classList.remove('text-input__input--error')
-  })
-}
 
 buttonError.addEventListener('click', () => {
   modalError.classList.add('modal--hidden')
